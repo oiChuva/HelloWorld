@@ -1,0 +1,39 @@
+Quinta-Feira, 19 de Setembro - 2024
+Curso de JavaScript - MODULO E - Aula 13
+
+REPETIÇÕES
+
+function comerPizza(){
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+while (condição) {
+}
+
+function comerPizza(){
+    while(temFatia()){
+        comerFatia()
+    }
+}
+
+Teste lógico no Inicio ^
+Teste lógico no final v
+
+do {
+
+} while (condição)
+
+Sexta-Feira, 20 de Setembro - 2024
+Curso de JavaScript - MODULO E - Aula 14
+
+Estrutura de repetição com variável de controle.
+
+for (inicio; teste; incremento) {
+
+}

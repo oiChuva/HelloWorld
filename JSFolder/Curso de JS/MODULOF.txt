@@ -1,0 +1,48 @@
+Quinta-Feira, 26 de Setembro - 2024
+Curso de JavaScript - MODULO F - Aula 15
+
+Variáveis Compostas
+
+variáveis simples só armazenam um valor por vez.
+Variáveis compostas armazenam vários valores em uma mesma estrutura.
+
+Array / Vetor -> var a = [carro1, carro2, carro3] 0 1 2
+Um Array/Vetor é uma variável composta que possui vários elementos compostos por um valor e uma chave de identificação.
+
+let num = [5,8,4]
+
+Quinta-Feira, 27 de Setembro - 2024
+Curso de JavaScript - MODULO F - Aula 16
+
+Funções
+
+Toda função precisa ter uma chamada.
+Pode ser disparado, ou cronometrado/automatizado.
+Parâmetro são entradas da chamada para a função.
+A função tem então sua ação.
+E no final entrega um retorno.
+
+------------------------------
+
+onclick="ação()"
+                param é parametro formal
+function ação(param){
+    bloco <- ações
+    return res <- resposta
+}
+      5 é parametro real
+ação(5) <- chamada
+
+------------------------------
+
+function parimp(n) {
+    if (n%2==0){
+        return 'par'
+    } else {
+        return 'impar'
+    }
+}
+let res = parimp(11)
+impar vai para dentro de res.
+
+------------------------------

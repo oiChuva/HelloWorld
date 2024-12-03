@@ -1,0 +1,68 @@
+{
+	"name": "theme-acid-purple",
+	"version": "1.1.1",
+	"displayName": "Acid Purple",
+	"description": "An acid theme with a little of purple",
+	"homepage": "https://github.com/jvitorfrancisco/acid-purple/blob/master/README.md",
+	"publisher": "jvitorfrancisco",
+	"license": "MIT",
+	"maintainers": [
+		"João Vitor de Francisco <jvitorfrancisco.dev@gmail.com>"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jvitorfrancisco/acid-purple.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jvitorfrancisco/acid-purple/issues"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"green",
+		"purple",
+		"theme",
+		"color-theme"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#140623",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Acid Purple (Classic)",
+				"uiTheme": "vs-dark",
+				"path": "./acid-purple-classic.json"
+			},
+			{
+				"label": "Acid Purple (Orange)",
+				"uiTheme": "vs-dark",
+				"path": "./acid-purple-orange.json"
+			},
+			{
+				"label": "Acid Purple (Pink)",
+				"uiTheme": "vs-dark",
+				"path": "./acid-purple-pink.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "2a9cd548-a26b-447e-af78-6150cd7a6062",
+		"publisherId": "bb0e1d2b-c27a-4701-b85c-d218633b24c9",
+		"publisherDisplayName": "Jvitorfrancisco",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1718137346192,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"name": "modern-purple-theme",
+	"displayName": "Modern Purple Theme",
+	"description": "A modern theme with shades of purple color",
+	"publisher": "nataliefruitema",
+	"version": "0.0.7",
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"icon": "images/modern-purple-theme-icon.png",
+	"author": {
+		"email": "natalie.fruitema@gmail.com",
+		"name": "Natalie Fruitema"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"purple",
+		"modern",
+		"dark",
+		"light",
+		"white"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nataliefruitema/modern-purple-theme"
+	},
+	"galleryBanner": {
+		"color": "#381079",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Modern Purple Theme Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Modern Purple Theme Dark-color-theme.json"
+			},
+			{
+				"label": "Modern Purple Theme Light",
+				"uiTheme": "vs",
+				"path": "./themes/Modern Purple Theme Light-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "0bbec748-8af7-4674-8cfb-b922c55336d8",
+		"publisherId": "99ad3a00-561c-4602-a1f8-06931a1126d7",
+		"publisherDisplayName": "Natalie Fruitema",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1718137393104,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

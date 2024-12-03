@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="tilogo.ico" type="image/x-icon">
+    <title>Requisição Estoque</title>
+    <link rel="stylesheet" href="estiloreqest.css">
+</head>
+<body>
+    <header>
+        <h1>Requisição do Estoque</h1>
+    </header>
+        <section id="section1">
+            <div id="intersection">
+                    <div>
+                    <input type="button" id="botaoGetApi" value="Ler Estoque" onclick="consultarEstoque()">
+                </div>
+        <!--     Resultado da consulta de estoque -->
+                <div id="res"></div>
+        <!--     Formulário para informações adicionais -->
+                <div id="form">
+                    <p><input type="number" id="quantNum" placeholder="Digite a quantidade desejada."></p>
+                    <p><input type="text" id="Solicitante" placeholder="Digite o solicitante"></p>
+                    <p><input type="text" id="MotivoOS" placeholder="Digite o motivo ou OS"></p>
+                    <p><input type="date" id="Data"></p>
+                </div>
+            </div>
+        <!-- Botão para carregar os dados da API -->
+            <div id="outsection">
+
+            </div>
+        </section>
+    <footer>
+        <p>&copy; Opus TI Versão 2.0    </p>
+        <p>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎</p>
+        <img src="opus.png" alt="Opus Medical" style="width: 80px; height: 40px;">
+    </footer>
+
+    <!-- Incluindo o script -->
+    <script src="appreqest.js"></script>
+</body>
+</html>

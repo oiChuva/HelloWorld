@@ -1,0 +1,25 @@
+Quinta-Feira, 12 de Setembro - 2024
+Curso de JavaScript - MODULO C - Aula 9
+
+INTRODUÇÃO AO DOM
+
+Sexta-Feira, 13 de Setembro - 2024
+Curso de JavaScript - MODULO C - Aula 10
+
+Evento é tudo que pode acontecer com um elemento.
+Eventos de mouse são muito comuns
+mouseenter
+mousemove
+mousedown
+mouseup
+click
+mouseout
+
+FUNÇÕES
+Conjunto de linhas que são executadas em bloco quando chamadas.
+
+function ação(parametro){
+    codigo
+}
+
+Fim do modulo C.

@@ -1,0 +1,47 @@
+Sexta-Feira, 13 de Setembro - 2024
+Curso de JavaScript - MODULO D - Aula 11
+
+Condições em JavaScript
+
+Condição Simples
+if (condição) {
+    bloco
+}
+
+Condição Composta
+if para condições, onde funciona como se e senão.
+if (condição) {
+    bloco
+} else {
+    bloco
+}
+
+Quarta-Feira, 18 de Setembro - 2024
+Curso de JavaScript - MODULO D - Aula 12
+
+Condições em JavaScript | parte 2
+Condições Aninhadas
+Condições dentro de condições.
+Util par aintervalos de valores.
+
+Condição multipla
+Util para valores fixos especificos e pontuais.
+
+switch(expressão) {
+    case valor 1:
+
+        break
+    case valor 2:
+
+        break                            <---------- BREAKS SÃO OBRIGATORIOS
+    case valor 3:
+
+        break
+    default:
+
+        break
+}
+
+Quarta-Feira, 18 de Setembro - 2024
+Curso de JavaScript - MODULO D - Exercício 1
+

@@ -1,0 +1,202 @@
+Quarta-Feira, 11 de Setembro - 2024
+Curso de JavaScript - MODULO A - Aula 1
+
+O que o JavaScript faz?
+"Praticamente tudo.
+
+Client x Server
+Eu x Youtube
+Peço os dados x Me entrega os dados
+
+Jornalista - HTML
+Designer - CSS
+Programador - JS
+
+HTML - Organiza textos, tamanhos e conteúdo em geral, como fotos.
+CSS - Organiza o texto para deixar bonito e visual.
+JS -  Realiza as interações do site.
+
+
+Curso de JavaScript - MODULO A - Aula 2
+
+
+Como chegamos até aqui?
+"Desde a guerra fria até os dias atuais o js foi criado como solução para os arquivos de internet e se tornou uma grande linguagem de programação.
+Criado pela Netscape
+
+Rever no final do curso.
+
+Curso de JavaScript - MODULO A - Aula 3
+Como funciona o aprendizado, e os primeiros comandos.
+Curso de JavaScript - MODULO A - Aula 4
+ex001.html
+
+Curso de JavaScript - MODULO B - Aula 5
+
+Var e Typos primitivos
+os principais são
+number
+string
+e boolean
+
+> var a = 10
+undefined
+> var n = 200
+undefined
+> n
+200
+> typeof n
+'number'
+> n = "Google"
+'Google'
+> typeof n
+'string'
+> typeof 6
+'number'
+> typeof "6.5"
+'string'
+> typeof []
+'object'
+> typeof function(){}
+'function'
+> typeof null
+'object'
+
+Curso de JavaScript - MODULO B - Aula 6
+PS C:\Users\Isaque\.vscode> node
+Welcome to Node.js v20.17.0.
+Type ".help" for more information.
+> var s = 'JavaScript'
+undefined
+> s
+'JavaScript'
+> 'Eu estou estudando s'
+'Eu estou estudando s'
+> 'Eu estou estudando ' + s
+'Eu estou estudando JavaScript'
+>
+
+Conversão de números:
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(2).replace('.', ',')
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.545,50'
+
+Curso de JavaScript - MODULO B - Aula 7
+
+Operadores Aritméticos
++ soma
+- subtração
+* multiplicação
+/ divisão real
+% resto da divisão inteira
+** potência
+ordem de precedência matemática js(prioridade esquerda para direita, quem aparecer primeiro)
+()
+**
+* / %
++ -
+
+Operadores de Atribuição
+= recebe | ex: var = 5
+
+auto atribuição
+var n = 3
+n = n + 4
+n == 7
+
+simplificação
+
+n += 4
+n -= 5
+n *= 4
+n /= 2
+n **= 2
+n %= 5 
+
+(de)incremento
+
+x += 1
+x -= 1
+x++ ou x--
+
+Curso de JavaScript - MODULO B - Aula 8
+
+Operadores Relacionais
+> maior que
+< menor que
+>= maior ou igual a
+<= menor ou igual a
+== exatamente igual
+! diferente
+
+Operadores Aritméticos sem acontecem antes de Operadores Relacionais.
+
+5 == 5
+5 == '5' mesmo valor
+5 === '5' false, tem que ter mesmo valor e mesmo tipo
+> x = 5
+5
+> y = '5'
+'5'
+> typeof x
+'number'
+> typeof y
+'string'
+> x == y
+true
+> x === y
+false
+> x != y
+false
+> x !== y
+true
+
+Operadores Lógicos em ordem
+! quer dizer não
+&& E ou and
+|| OU
+
+Precedência
+Aritméticos
+Relacionais
+Lógicos
+
+
+Operador Ternário
+teste ? true : false
+médica >= 7 ? 'Aprovado' : 'reprovado'
+> var n = 3
+> var média = 5.5
+undefined
+> média >= 7 ? 'Aprovado' : 'Reprovado'
+'Reprovado'
+> média += 3
+8.5
+> média >= 7 ? 'Aprovado' : 'Reprovado'
+'Aprovado'
+> ver res = 8
+ver res = 8
+    ^^^
+Uncaught SyntaxError: Unexpected identifier 'res'
+> var x = 8
+undefined
+> var res = x % 2 == 0 ? 5 : 9
+undefined
+> x
+8
+> res
+5
+> var idade = 19
+undefined
+> var r = idade >= 18 ? "MAIOR" : "MENOR"
+undefined
+> r
+'MAIOR'
+

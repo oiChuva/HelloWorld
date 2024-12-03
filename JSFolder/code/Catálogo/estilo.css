@@ -1,0 +1,51 @@
+body {
+    background: rgb(63, 48, 99);
+    height: 100%;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+div#Conteudo{
+    display: flex;
+}
+
+section#sec1{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    box-sizing: border-box;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 95%;
+    height: 80vh;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(6, 6, 22, 0.384);
+    /* flex-wrap: wrap; */
+}
+div#empty{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: white;
+}
+div#quad1{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding: 15px;
+    background: black;
+    box-shadow: 5px 5px 10px rgba(194, 194, 194, 0.384);
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,50 @@
+{
+	"name": "github-purple",
+	"displayName": "Github Purple",
+	"description": "A theme as accurate to Github's dark theme as possible, but with purple accents!",
+	"version": "0.0.15",
+	"engines": {
+		"vscode": "^1.54.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Github Purple",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Purple Github-color-theme.json"
+			}
+		]
+	},
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#0d1117",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/4a454646/github-purple"
+	},
+	"homepage": "https://github.com/4a454646/github-purple",
+	"publisher": "4a454646",
+	"keywords": [
+		"github",
+		"dark",
+		"purple"
+	],
+	"__metadata": {
+		"id": "dc8a300e-fc9f-46a8-ac4f-4fec1ad4406c",
+		"publisherId": "93337026-d5b5-4a9b-ae67-573436065b36",
+		"publisherDisplayName": "4a454646",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1718137384296,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

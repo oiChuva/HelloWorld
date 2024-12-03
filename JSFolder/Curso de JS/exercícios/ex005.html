@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <style>
+        body {
+            background: rgb(110, 49, 172);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM. Agora funciona</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>    
+    <script> // DOM é um Document Object Model, dentro do navegador. OBJETOS DOM: window -> location, document, history. Em document HTML, em HTML head e body. Em head, meta, title. Em Body h1, div, e p que tem strong.
+        // metodos para acessar os objetos
+        //MARCA ID NOME CLASSE E SELETOR
+        var p1 = document.getElementsByTagName('p')[1]
+        p1.style.color = 'orange'
+        document.write('Está escrito assim: ' + p1.innerText)
+        // var d = document.getElementById('msg')
+        // d.style.background = 'green'
+        // d.innerText = 'Estou aguardando...'
+        // var d = window.document.getElementsByName('msg')[0]
+        // d.style.background = 'green'
+        // d.innerText = 'Estou nomeando...'
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'orange'
+        d.innerText = 'Estou selecionando...'
+        d.style.color = "purple"
+    </script>
+</body>
+</html>

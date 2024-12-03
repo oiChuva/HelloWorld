@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRouGringo</title>
+</head>
+<body>
+    <p>Site para treinar.</p>
+    <div id="txt1">
+        <p>De que país você é? </p>
+        <input type="text" name="BroGr" id="txtvar">
+        <input type="button" value="Verificar" onclick="verify()">
+    </div>
+    <div id="res">
+
+    </div>
+    <script>
+        var res = document.getElementById('res')
+        var estr = ('<p>Você é Estrangeiro!</p>')
+        var hueBR = ('<p>Você é Brasileiro!</p>')
+        function verify() {
+            var país = window.document.getElementById('txtvar')
+        if (String(país.value) != 'Brasil') {
+            if (res.innerHTML === estr){
+            res.innerHTML += estr
+            } else {
+                res.innerHTML = estr
+            }
+        } else {
+            if (res.innerHTML === hueBR){
+            res.innerHTML += hueBR
+            } else {
+                res.innerHTML = hueBR
+            }
+        }
+    }
+    </script>
+</body>
+</html>

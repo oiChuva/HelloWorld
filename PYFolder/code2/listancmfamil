@@ -1,0 +1,94 @@
+CodFamilia = ""
+familia_nome = ""
+
+if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR" or familia_nome == "RAIO-X":
+    Ncm = "9022.14.19"
+elif familia_nome == "ULTRASSOM":
+    Ncm = "9018.12.10"
+elif "TRANSDUTOR" in familia_nome:
+    Ncm = "9018.19.90"
+elif familia_nome == "VIDEO PRINTER":
+    Ncm = "9022.14.19"
+elif familia_nome == "DEA":
+    Ncm = "9018.90.96"
+elif familia_nome == "MONITOR MULTIPARAMETRO":
+    Ncm = "9018.19.80"
+else:
+    Ncm = "9999.99.99"
+
+if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR" or familia_nome == "RAIO-X":
+    CodFamilia = "7257939493"
+elif familia_nome == "7345596682":
+    CodFamilia = "7325470580"
+elif familia_nome == "ULTRASSOM":
+    CodFamilia = "7281767348"
+elif "TRANSDUTOR" in familia_nome:
+    CodFamilia = "7281767246"
+elif familia_nome == "VIDEO PRINTER":
+    CodFamilia = "7281766997"
+elif familia_nome == "MONITOR MULTIPARAMETRO":
+    CodFamilia = "7281771794"
+elif familia_nome == "FONTE":
+    CodFamilia = "7311711664"
+elif familia_nome == "NOBREAK":
+    CodFamilia = "7283633935"
+elif familia_nome == "MAMOGRAFO":
+    CodFamilia = "7313952606"
+elif familia_nome == "DEA":
+    CodFamilia = "7316078524"
+elif familia_nome == "CAMA HOSPITALAR":
+    CodFamilia = "7302443424"
+elif familia_nome == "MESA CIRURGICA" or familia_nome == "ACESSORIO MESA":
+    CodFamilia = "7313811760"
+elif familia_nome == "TOMOGRAFIA":
+    CodFamilia = "7281766618"
+elif familia_nome == "VENTILADOR PULMONAR" or familia_nome == "VENTILADOR DE TRANSPORTE":
+    CodFamilia = "7281767228"
+elif familia_nome == "ASPIRADOR CIRURGICO":
+    CodFamilia = "7281771910"
+elif familia_nome == "BATERIA":
+    CodFamilia = "7325470580"
+elif familia_nome == "ELETROCARDIOGRAFO":
+    CodFamilia = "7312162428"
+elif familia_nome == "FOCO CIRURGICO":
+    CodFamilia = "7302639730"
+elif familia_nome == "MAQUINA DE ANESTESIA":
+    CodFamilia = "7281767561"
+elif familia_nome == "POLIGRAFO":
+    CodFamilia = "7281766206"
+elif familia_nome == "ELETROENCEFALOGRAFO":
+    CodFamilia = "7281766174"
+elif familia_nome == "SISTEMA DE INFUSAO":
+    CodFamilia = "7281766533"
+elif "OXIMETRO" in familia_nome:
+    CodFamilia = "7345596682"
+elif familia_nome == "DESFIBRILADOR":
+    CodFamilia = "7281766758"
+elif familia_nome == "ANALISADOR DE GASES" or familia_nome == "ANALISADOR DE HEMATOLOGIA":
+    CodFamilia = "7281765910"
+elif familia_nome == "IMPRESSORA" or familia_nome == "CARRO TRANSPORTE IMPRESSORA":
+    CodFamilia = "7281766248"
+elif familia_nome == "BOMBA DE INFUSAO":
+    CodFamilia = "7281766345"
+elif familia_nome == "CENTRIFUGA":
+    CodFamilia = "7281766366"
+elif familia_nome == "COLPOSCOPIO":
+    CodFamilia = "7281766550"
+elif familia_nome == "POLISSONOGRAFO":
+    CodFamilia = "7281766782"
+elif familia_nome == "REVELADOR":
+    CodFamilia = "7281766935"
+elif familia_nome == "INCUBADORA":
+    CodFamilia = "7281766395"
+elif familia_nome == "MAQUINA DE LAVAR ENDOSCOPIA":
+    CodFamilia = "7281767440"
+elif familia_nome == "MICROSCOPIO":
+    CodFamilia = "7281767428"
+elif familia_nome == "VENTILADOR DE TRANSPORTE":
+    CodFamilia = "7281767451"
+elif familia_nome == ["ANALISADOR DE COAGULACAO", "ANALISADOR DE MULTIPARAMETROS", "MULTIMETRO", "LUXIMETRO",
+    "ANALIZADOR DE BISTURI", "ANALISADOR DE VENTILADOR PULMONAR", "ANALISADOR DE SEGURANCA ELETRICA", "ANALISADOR DE QUALIFICACAO TERMICA",
+    "ANALISADOR DE NIBP", "CAPACIMETRO", "TRENA LASER", "NIVEL LASER", "TERMO-HIGROMETRO"]:
+    CodFamilia = "7281766525"
+else:
+    CodFamilia = "7281765596"
