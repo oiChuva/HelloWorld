@@ -151,6 +151,9 @@ function enviarDados(ht_mail) {
             F5_Button.style.left = "50%";
             F5_Button.style.transform = "translate(-50%, -50%)";
             F5_Button.style.backgroundColor = "#282828";
+            F5_Button.addEventListener("click", () => {
+                window.location.href = "https://requisicao.arcocirurgico.com.br/";
+            });
         })
         .catch(error => {
             console.error('Erro:', error);
@@ -161,7 +164,4 @@ function enviarDados(ht_mail) {
 // Adicionar eventos de mudança aos campos para verificar preenchimento
 document.querySelectorAll("#Solicitante, #MotivoOS, #quantNum, #Data").forEach(field => {
     field.addEventListener("input", verificarCampos);
-});
-F5_Button.addEventListener("click", () => {
-    window.location.href = "https://requisicao.arcocirurgico.com.br/";
 });
