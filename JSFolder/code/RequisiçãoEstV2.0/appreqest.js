@@ -140,7 +140,7 @@ function enviarDados(ht_mail) {
             return response.json();
         })
         .then(data => {
-            alert("Dados enviados com sucesso!");
+            document.body.innerHTML = '';
             console.log("Resposta do servidor:", data);
         })
         .catch(error => {
