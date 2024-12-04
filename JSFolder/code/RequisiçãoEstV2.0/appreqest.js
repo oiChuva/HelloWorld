@@ -140,7 +140,7 @@ function enviarDados(ht_mail) {
             return response.json();
         })
         .then(data => {
-            document.body.innerHTML = '';
+            document.body.innerHTML = 'Solicitação Enviada.';
             const F5_Button = document.createElement("button");
             F5_Button.id = "sendButton";
             F5_Button.textContent = "↺";
