@@ -141,6 +141,9 @@ function enviarDados(ht_mail) {
         })
         .then(data => {
             document.body.innerHTML = '';
+            const F5_Button = document.createElement("button");
+            F5_Button.id = "sendButton";
+            F5_Button.textContent = "↺";
             console.log("Resposta do servidor:", data);
         })
         .catch(error => {
