@@ -1,20 +1,71 @@
 body {
-    background: rgb(63, 48, 99);
+    background: #403f41;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    font-family: system-ui;
+    overflow-x: hidden; /* Evita a rolagem horizontal  */
+    overflow-y: hidden; /* Remove a barra de rolagem vertical  */
+    background: url('fundo-n.png') no-repeat center center fixed;
+    background-size: 100%;
+    background-repeat: repeat; /* Faz a imagem cobrir todo o fundo */
 }
 header{
     color: white;
     text-align: center;
 }
 section{
-    background: white;
+    position: center;
+    font-family: system-ui;
+    display: flex; /* Torna o section um flex container */
+    flex-direction: row; /* Organiza conteúdo verticalmente */
+    justify-content: space-between; /* Centraliza o conteúdo verticalmente */
+     /* Centraliza o conteúdo horizontalmente */
+    color: white;
+    background: #2d2d2d;
     border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    padding: 20px;
+    width: 37%;
+    height: 120%;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(6, 6, 22, 0.384);
 }
-footer{
-    color: white;
+input{
     text-align: center;
+    place-items: center;
+    color: white;
+    width: 80%;
+    padding: 5px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #282828;
+    border: 1px solid #131313;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+footer{
+    display: inline flex; /* Ativa o layout flexível */
+    justify-content: space-between; /* Espaço máximo entre os itens */
+    align-content: center;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    padding: 10px; /* Espaçamento interno */
+    color: #ffffff;
+    
     font-style: italic;
+}
+button{
+    position: static;
+    background-color: #eeeeee;
+    border: none;
+    color: #333333;
+    border-radius: 5px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin: auto;
+}
+button:hover {
+    background-color: #1d1d1d;
+    color: white;
 }
