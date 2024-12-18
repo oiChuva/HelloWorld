@@ -1,5 +1,5 @@
-body {
-    background: #403f41;
+body{
+    background: #272727;
     display: grid;
     place-items: center;
     height: fit-content;
@@ -8,41 +8,71 @@ body {
     overflow-y: hidden; /* Remove a barra de rolagem vertical  */
     background: url('fundo-n.png') no-repeat center center fixed;
     background-size: 100%;
+    color: white;
     background-repeat: repeat; /* Faz a imagem cobrir todo o fundo */
 }
-header{
-    color: white;
-    text-align: center;
-}
-section{
-    position: center;
+section {
+    flex-wrap: nowrap; /* Evita quebra de linha */
     font-family: system-ui;
-    display: flex; /* Torna o section um flex container */
-    flex-direction: row; /* Organiza conteúdo verticalmente */
-    justify-content: space-between; /* Centraliza o conteúdo verticalmente */
-     /* Centraliza o conteúdo horizontalmente */
+    display: flex; /* Ativa o flexbox */
+    flex-direction: row; /* Alinha elementos em linha horizontal */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
     color: white;
     background: #2d2d2d;
     border-radius: 10px;
     padding: 20px;
-    width: 37%;
-    height: 120%;
+    width: 50%;
+    height: 130%;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(6, 6, 22, 0.384);
 }
-input{
+
+div {
+    flex-wrap: nowrap; /* Evita quebra de linha */
+    font-family: system-ui;
+    display: flex;
+    flex-direction: row; /* Deixa o conteúdo horizontal */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center;
+    width: 100%;
+    margin: 0 10px;
+}
+
+input {
+    font-family: system-ui;
+    text-align: center;
+    width: 300px; /* Define largura padrão */
+    margin-right: 10px;
     text-align: center;
     place-items: center;
     color: white;
-    width: 80%;
+    width: 50%;
     padding: 5px;
-    margin: auto;
     border-radius: 5px;
     background-color: #282828;
     border: 1px solid #131313;
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+button {
+    font-family: system-ui;
+    background-color: #eeeeee;
+    border: none;
+    color: #333333;
+    border-radius: 5px;
+    height: 40px; /* Tamanho uniforme */
+    width: 80px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1d1d1d;
+    color: white;
+}
+label {
+    flex-wrap: nowrap; /* Evita quebra de linha */
 }
 footer{
     display: inline flex; /* Ativa o layout flexível */
@@ -53,19 +83,4 @@ footer{
     color: #ffffff;
     
     font-style: italic;
-}
-button{
-    position: static;
-    background-color: #eeeeee;
-    border: none;
-    color: #333333;
-    border-radius: 5px;
-    height: 70px;
-    width: 70px;
-    cursor: pointer;
-    margin: auto;
-}
-button:hover {
-    background-color: #1d1d1d;
-    color: white;
 }
