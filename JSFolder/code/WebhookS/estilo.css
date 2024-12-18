@@ -59,9 +59,9 @@ input {
 
 button {
     font-family: system-ui;
-    background-color: #eeeeee;
+    background-color: #545454;
     border: none;
-    color: #333333;
+    color: #ffffff;
     border-radius: 5px;
     height: 40px; /* Tamanho uniforme */
     width: 80px;
