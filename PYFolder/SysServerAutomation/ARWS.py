@@ -162,5 +162,19 @@ def webhook_end_l():
         return JSONResponse(content=estoque_json, status_code=200)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+@app.post("/EtiquetaNota")
+def webhook_end_E():
+    """Read the fiscal notes with no exception in the Omie Sistem."""
+    try:
+        data = await request.json()
+        print(f"Received data: {data}")
+        numero_serie_input = data.get("numeroSerie")
+        if not numero_serie_input:
+            raise HTTPException(status_code=400, detail="numeroSerie is required")
+
+        return
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 # Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload`
