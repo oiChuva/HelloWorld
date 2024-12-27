@@ -3,168 +3,80 @@ import requests
 import unicodedata
 
 def remove_accents(input_str):
-    decoded_str = input_str.encode().decode('unicode-escape')
-    nfkd_form = unicodedata.normalize('NFKD', decoded_str)
+    nfkd_form = unicodedata.normalize('NFKD', input_str)
     return ''.join([c for c in nfkd_form if not unicodedata.combining(c)])
 
-def consultar_equipamento(numero_serie):
-    urlAPI1 = 'https://opusmedical.api.neovero.com/api/Equipamentos/pesquisa'
+def consultar_equipamento(numero_serie_input):
+    url = 'https://opusmedical.api.neovero.com/api/Equipamentos/query'
     headers = {
         'accept': 'application/json',
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTI2IiwianRpIjoiMTEyNiIsImlhdCI6MTcxMjA4MjU4MCwic3ViIjoiaW50ZWdyYWNhb19hcGkiLCJkb21haW4iOiJvcHVzbWVkaWNhbC5hcGkubmVvdmVyby5jb20iLCJuYmYiOjE3MTIwODI1ODAsImV4cCI6MTcxMjA4NjE4MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdCIsImF1ZCI6ImU2YjBmOTNiNjAyNTQ0MDg5ZDM0MzZmYWJjNWI0YWIwIn0.uH7yBN_f9k1bG1IWij9NGPzohwv8qyWWsjg7kNemBA8'
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTI2IiwianRpIjoiMTEyNiIsImlhdCI6MTcxMjA4MjU4MCwic3ViIjoiaW50ZWdyYWNhb19hcGkiLCJkb21haW4iOiJvcHVzbWVkaWNhbC5hcGkubmVvdmVyby5jb20iLCJuYmYiOjE3MTIwODI1ODAsImV4cCI6MTcxMjA4NjE4MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdCIsImF1ZCI6ImU2YjBmOTNiNjAyNTQ0MDg5ZDM0MzZmYWJjNWI0YWIwIn0.uH7yBN_f9k1bG1IWij9NGPzohwv8qyWWsjg7kNemBA8',
+        'Content-Type': 'application/json-patch+json'
+    }
+    data = {
+        "limit": 100,
+        "offset": 0,
+        "filterGroups": [
+            {
+                "combineOperator": "AND",
+                "filters": [
+                    {
+                        "property": "numeroSerie",
+                        "value": numero_serie_input,
+                        "combineOperator": "AND"
+                    },
+                    {
+                        "property": "modelo.id",
+                        "value": [10, 828],
+                        "combineOperator": "OR"
+                    }
+                ]
+            }
+        ],
+        "orderBy": [
+            {
+                "column": "modelo.nome",
+                "ascending": True
+            }
+        ]
     }
 
-    response = requests.post(urlAPI1, headers=headers, json={"numeroSerie": numero_serie})
-
-    if response.status_code == 200:
-        data = response.json()
-        equipamento_id = str(int(data[0]['id']))
-        variavelURL = equipamento_id
-
-        url = 'https://opusmedical.api.neovero.com/api/Equipamentos/' + variavelURL + '?api-version=1'
-        headers = {
-            'accept': 'application/json',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTI2IiwianRpIjoiMTEyNiIsImlhdCI6MTcxMjA4MjU4MCwic3ViIjoiaW50ZWdyYWNhb19hcGkiLCJkb21haW4iOiJvcHVzbWVkaWNhbC5hcGkubmVvdmVyby5jb20iLCJuYmYiOjE3MTIwODI1ODAsImV4cCI6MTcxMjA4NjE4MCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdCIsImF1ZCI6ImU2YjBmOTNiNjAyNTQ0MDg5ZDM0MzZmYWJjNWI0YWIwIn0.uH7yBN_f9k1bG1IWij9NGPzohwv8qyWWsjg7kNemBA8'
-        }
-
-        response = requests.get(url, headers=headers)
+    try:
+        response = requests.post(url, headers=headers, json=data)
 
         if response.status_code == 200:
-            data = response.json()
-            numero_serie = data.get("numeroSerie", None)
-            patrimonio = data.get("patrimonio", None)
-            nome = data.get("nome", None)
-            modelo_nome = data.get("modelo", {}).get("nome", None)
-            fabricante_nome = data.get("modelo", {}).get("fabricante", {}).get("nome", None)
-            familia_nome = data.get("modelo", {}).get("familia", {}).get("nome", None)
-            valor_aquisicao = data.get("valorAquisicao", None)
-            
-            if nome:
-                nome = remove_accents(nome)
-            if modelo_nome:
-                modelo_nome = remove_accents(modelo_nome)
-            if fabricante_nome:
-                fabricante_nome = remove_accents(fabricante_nome)
-            if familia_nome:
-                familia_nome = remove_accents(familia_nome)
-            
-            resposta_desejada = {
-                "numeroSerie": numero_serie,
-                "patrimonio": patrimonio,
-                "nome": nome,
-                "modelo": {
-                    "nome": modelo_nome,
-                    "fabricante": {
-                        "nome": fabricante_nome
-                    },
-                    "familia": {
-                        "nome": familia_nome
-                    }
-                },
-                "valorAquisicao": valor_aquisicao
-            }
+            try:
+                equipamentos = response.json()
 
-            if numero_serie:
-                print("Número de Série:", numero_serie)
-                print("Patrimônio:", patrimonio)
-                print("Nome do Equipamento:", nome)
-                print("Nome do Modelo:", modelo_nome)
-                print("Fabricante do Modelo:", fabricante_nome)
-                print("Família do Modelo:", familia_nome)
-                print("Valor de Aquisição:", valor_aquisicao)
+                if isinstance(equipamentos, list):
+                    if equipamentos:
+                        for equipamento in equipamentos:
+                            numero_serie = equipamento.get("numeroSerie", None)
+                            nome = remove_accents(equipamento.get("nome", ""))
+                            modelo_nome = remove_accents(equipamento.get("modelo", {}).get("nome", ""))
+                            fabricante_nome = remove_accents(equipamento.get("modelo", {}).get("fabricante", {}).get("nome", ""))
+                            valor_aquisicao = equipamento.get("valorAquisicao", None)
 
-                if patrimonio:
-                    codOMIE = (numero_serie + "-EQ" + patrimonio)
-                    descOMIE = (nome + " " + numero_serie)
-                    blocoK = "08"
-                    if familia_nome == "CARRO MONITOR":
-                        codOMIE = ("CM" + codOMIE)
+                            print(f"Número de Série: {numero_serie}")
+                            print(f"Nome do Equipamento: {nome}")
+                            print(f"Modelo: {modelo_nome}")
+                            print(f"Fabricante: {fabricante_nome}")
+                            print(f"Valor de Aquisição: {valor_aquisicao}")
+                            print("-" * 40)
                     else:
-                        codOMIE = (codOMIE)
+                        print("Nenhum equipamento encontrado.")
                 else:
-                    codOMIE = (numero_serie + "-CL")
-                    descOMIE = (nome + " " + numero_serie)
-                    blocoK = "99"
-                    if familia_nome == "CARRO MONITOR":
-                        codOMIE = ("CM" + codOMIE)
-                    else:
-                        codOMIE = (codOMIE)
+                    print("Resposta inesperada da API:", equipamentos)
 
-                if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR":
-                    Ncm = "9022.14.19"
-                elif familia_nome == "ULTRASSOM":
-                    Ncm = "9018.12.10"
-                elif "TRANSDUTOR" in familia_nome:
-                    Ncm = "9018.19.90"
-                elif familia_nome == "VIDEO PRINTER":
-                    Ncm = "9022.14.19"
-                else:
-                    Ncm = "9999.99.99"
-
-                if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR":
-                    CodFamilia = "7257939493"
-                elif familia_nome == "ULTRASSOM":
-                    CodFamilia = "7281767348"
-                elif "TRANSDUTOR" in familia_nome:
-                    CodFamilia = "7281767246"
-                elif familia_nome == "VIDEO PRINTER":
-                    CodFamilia = "7281766997"
-                else:
-                    CodFamilia = "7281765596"
-
-                def requisicao_inclusao(codigo, ncm, descricao_completa, marca, modelo, unidade, codigo_familia, origem_mercadoria, valor_unitario):
-                    app_key = "1826443506888"
-                    app_secret = "4a98af31f25d8b152a18911c65d23190"
-                    url = "https://app.omie.com.br/api/v1/geral/produtos/"
-
-                    dados = { 
-                        "call": "IncluirProduto",
-                        "app_key": app_key,
-                        "app_secret": app_secret,
-                        "param": [
-                            {
-                                "codigo_produto_integracao": codigo,
-                                "codigo": codigo,
-                                "ncm": ncm,
-                                "descricao": descricao_completa,
-                                "marca": marca,
-                                "modelo": modelo,
-                                "unidade": unidade,
-                                "codigo_familia": codigo_familia,
-                                "valor_unitario": valor_unitario,
-                                "tipoItem": blocoK,
-                                "recomendacoes_fiscais": {
-                                    "origem_mercadoria": origem_mercadoria
-                                }
-                            }
-                        ]
-                    }
-
-                    headers = {"Content-Type": "application/json"}
-
-                    response = requests.post(url, data=json.dumps(dados), headers=headers)
-
-                    if response.status_code == 200:
-                        print("Requisição bem-sucedida. Resposta do servidor:")
-                        print(response.json())
-                    else:
-                        print("Erro na requisição. Código de status:", response.status_code)
-                        print(response.text)
-
-                requisicao_inclusao(
-                    codigo=codOMIE,
-                    ncm=Ncm,
-                    descricao_completa=descOMIE,
-                    unidade="UN",
-                    modelo=modelo_nome,
-                    marca=fabricante_nome,
-                    codigo_familia=CodFamilia,
-                    origem_mercadoria="0",
-                    valor_unitario=valor_aquisicao
-                )
-
+            except json.JSONDecodeError:
+                print("Erro ao decodificar a resposta da API. Resposta:")
+                print(response.text)
         else:
-            print("Erro:", response.status_code)
+            print(f"Erro na requisição: {response.status_code}")
+            print(response.text)
 
-# Example usage
-consultar_equipamento(input("Número de Série: "))
+    except Exception as e:
+        print(f"Erro ao realizar a requisição: {e}")
+
+# Exemplo de uso
+consultar_equipamento(input("Digite o número de série: "))
