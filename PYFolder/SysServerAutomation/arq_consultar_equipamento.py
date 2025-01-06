@@ -70,7 +70,6 @@ def consultar_equipamento(numero_serie_input):
                     data = filtered_items[0]
                     numero_serie = data.get("numeroSerie", None)
                     patrimonio = data.get("patrimonio", None)
-                    nome = data.get("nome", None)
                     modelo_nome = data.get("modelo", {}).get("nome", None)
                     fabricante_nome = data.get("modelo", {}).get("fabricante", {}).get("nome", None)
                     familia_nome = data.get("modelo", {}).get("familia", {}).get("nome", None)
@@ -78,8 +77,6 @@ def consultar_equipamento(numero_serie_input):
                     cliente_id = data.get("clienteId", None)
                     empresa_id = data.get("empresa", {}).get("id", None)
 
-                    if nome:
-                        nome = remove_accents(nome)
                     if modelo_nome:
                         modelo_nome = remove_accents(modelo_nome)
                     if fabricante_nome:
@@ -90,7 +87,6 @@ def consultar_equipamento(numero_serie_input):
                     resposta_desejada = {
                         "numeroSerie": numero_serie,
                         "patrimonio": patrimonio,
-                        "nome": nome,
                         "modelo": {
                             "nome": modelo_nome,
                             "fabricante": {
@@ -106,6 +102,8 @@ def consultar_equipamento(numero_serie_input):
                     }
 
                     print(resposta_desejada)
+
+                    nome = (familia_nome + "|" + modelo_nome + "("+ fabricante_nome +")")
 
                     if numero_serie:
                         print("Número de Série:", numero_serie)
@@ -133,6 +131,12 @@ def consultar_equipamento(numero_serie_input):
 
                         if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR" or familia_nome == "RAIO-X" or familia_nome == "RAIO-X PORTATIL" or familia_nome == "EQUIPAMENTO DE RAIO-X MOVEL":
                             Ncm = "9022.14.19"
+                        elif familia_nome == "CAMA HOSPITALAR" or familia_nome == "MESA CIRURGICA":
+                            Ncm = "9402.90.20"
+                        elif familia_nome == "FOCO HOSPITALAR":
+                            Ncm = "9405.11.10"
+                        elif familia_nome == "MONITOR MULTIPARAMETRO":
+                            Ncm = "9018.19.80"
                         elif familia_nome == "ULTRASSOM":
                             Ncm = "9018.12.10"
                         elif "TRANSDUTOR" in familia_nome:
@@ -142,8 +146,12 @@ def consultar_equipamento(numero_serie_input):
                         else:
                             Ncm = "9999.99.99"
 
-                        if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR":
+                        if familia_nome == "ARCO CIRURGICO":
                             CodFamilia = "7257939493"
+                        elif familia_nome == "CARRO MONITOR":
+                            CodFamilia = "7387297711"
+                        elif familia_nome == "IMPRESSORA":
+                            CodFamilia = "7387344116"
                         elif familia_nome == "RAIO-X" or familia_nome == "EQUIPAMENTO DE RAIO-X MOVEL":
                             CodFamilia = "7313956365"
                         elif familia_nome == "ULTRASSOM":
@@ -164,6 +172,8 @@ def consultar_equipamento(numero_serie_input):
                             CodFamilia = "7316078524"
                         elif familia_nome == "CAMA HOSPITALAR":
                             CodFamilia = "7302443424"
+                        elif familia_nome == "FOCO HOSPITALAR":
+                            CodFamilia = "7302639730"
                         elif familia_nome == "MESA CIRURGICA" or familia_nome == "ACESSORIO MESA":
                             CodFamilia = "7313811760"
                         elif familia_nome == "TOMOGRAFIA":
