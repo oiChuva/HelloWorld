@@ -117,17 +117,19 @@ def consultar_equipamento(numero_serie_input):
 
                         if patrimonio:
                             codOMIE = numero_serie + "-EQ" + patrimonio
-                            descOMIE = nome + " " + numero_serie
                             blocoK = "08"
-                        else:
-                            if cliente_id:
-                                codOMIE = numero_serie + "-CL"
-                            else:
-                                codOMIE = numero_serie + "-EQ"
-                            descOMIE = nome + " " + numero_serie
+                            print(f"Definindo codOMIE como EQ devido ao patrimônio: {codOMIE}")
+                        elif cliente_id:
+                            codOMIE = numero_serie + "-CL"
                             blocoK = "99"
+                            print(f"Definindo codOMIE como CL devido ao cliente_id: {codOMIE}")
+                        else:
+                            codOMIE = numero_serie + "-EQ"
+                            blocoK = "99"
+                            print(f"Definindo codOMIE como EQ por padrão: {codOMIE}")
 
-                        print(codOMIE)
+                        print(f"Descrição final: {nome}, BlocoK: {blocoK}")
+
 
                         if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR" or familia_nome == "RAIO-X" or familia_nome == "RAIO-X PORTATIL" or familia_nome == "EQUIPAMENTO DE RAIO-X MOVEL":
                             Ncm = "9022.14.19"
@@ -232,6 +234,25 @@ def consultar_equipamento(numero_serie_input):
                             CodFamilia = "7281765596"
 
                         print(CodFamilia)
+
+                        resposta_desejada = {
+                        "numeroSerie": numero_serie,
+                        "patrimonio": patrimonio,
+                        "modelo": {
+                            "nome": modelo_nome,
+                            "fabricante": {
+                                "nome": fabricante_nome
+                            },
+                            "familia": {
+                                "nome": familia_nome
+                            }
+                        },
+                        "valorAquisicao": valor_aquisicao,
+                        "clienteId": cliente_id,
+                        "empresaId": empresa_id
+                        }
+    
+                        print(resposta_desejada)
 
                         return resposta_desejada  # Retorna os dados do equipamento
                     else:
