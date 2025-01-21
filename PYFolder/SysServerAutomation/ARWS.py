@@ -177,4 +177,61 @@ def webhook_end_E():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/NotaFiscal")
+async def webhook_end_NF(request: Request):
+    """
+    Webhook que utiliza o número da nota fiscal (numNF) para puxar os dados da NF,
+    empresa e endereço do destinatário.
+    """
+    try:
+        # Parsear os dados da requisição
+        data = await request.json()
+        nNF = data.get("numNF")
+        if not nNF:
+            raise HTTPException(status_code=400, detail="Número da nota fiscal (numNF) é obrigatório.")
+
+        # Consultar dados da nota fiscal
+        resultado_nf = requisicao_consulta_nf("0", nNF)
+        if not resultado_nf:
+            raise HTTPException(status_code=404, detail="Dados da nota fiscal não encontrados.")
+
+        razao_social_dest, cnpj_cpf_dest, numero_nf_dest, tp_nf, detalhes_produtos, nCodEmp, nCodCli = resultado_nf
+
+        # Consultar dados da empresa
+        empresa_consultada = requisicao_consultar_empresa(nCodEmp)
+        if not empresa_consultada:
+            raise HTTPException(status_code=404, detail="Dados da empresa não encontrados.")
+
+        # Consultar endereço do destinatário
+        endereco_destino = requisicao_consulta_endereco_dest(nCodCli)
+        if not endereco_destino:
+            raise HTTPException(status_code=404, detail="Endereço do destinatário não encontrado.")
+
+        # Montar a resposta
+        response_data = {
+            "numero_nf_dest": numero_nf_dest,
+            "tipo_nf": tp_nf,
+            "destinatario": {
+                "razao_social": razao_social_dest,
+                "cnpj_cpf": cnpj_cpf_dest,
+                "endereco": endereco_destino,
+            },
+            "remetente": {
+                "razao_social": empresa_consultada['razao_social'],
+                "telefone": f"({empresa_consultada['telefone1_ddd']}) {empresa_consultada['telefone1_numero']}",
+            },
+            "produtos": detalhes_produtos,
+        }
+
+        return JSONResponse(content=response_data)
+
+    except HTTPException as http_exc:
+        # Tratar exceções específicas do FastAPI
+        raise http_exc
+
+    except Exception as e:
+        # Tratar erros gerais
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 # Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload`

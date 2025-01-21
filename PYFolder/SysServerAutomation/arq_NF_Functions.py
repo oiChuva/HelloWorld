@@ -24,7 +24,6 @@ def requisicao_consulta_nf(nCodNF, nNF):
 
     if response.status_code == 200:
         resposta_json = response.json()
-        
         nf_dest = resposta_json.get("nfDestInt", {})
         razao_social_dest = nf_dest.get("cRazao", "")
         cnpj_cpf_dest = nf_dest.get("cnpj_cpf", "")
@@ -38,20 +37,19 @@ def requisicao_consulta_nf(nCodNF, nNF):
         detalhes = resposta_json.get("det", [])
         for detalhe in detalhes:
             prod = detalhe.get("prod", {})
-            cProd = prod.get("cProd", "")
-            xProd = prod.get("xProd", "")
-            vProd = prod.get("vProd", "")
-            qCom = prod.get("qCom", "")
-            detalhes_produtos.append({"cProd": cProd, "xProd": xProd, "vProd": vProd, "qCom": qCom})
+            detalhes_produtos.append({
+                "cProd": prod.get("cProd", ""),
+                "xProd": prod.get("xProd", ""),
+                "vProd": prod.get("vProd", ""),
+                "qCom": prod.get("qCom", "")
+            })
 
         nf_emit_int = resposta_json.get("nfEmitInt", {})
         nCodEmp = nf_emit_int.get("nCodEmp", "")
 
         return razao_social_dest, cnpj_cpf_dest, numero_nf_dest, tp_nf, detalhes_produtos, nCodEmp, nCodCli
     else:
-        print("Erro na requisição. Código de status:", response.status_code)
-        print(response.text)
-        return None, None, None, None, None, None, None
+        raise Exception(f"Erro ao consultar NF. Status code: {response.status_code}, Response: {response.text}")
 
 def requisicao_consultar_empresa(nCodEmp):
     url = "https://app.omie.com.br/api/v1/geral/empresas/"
@@ -75,26 +73,21 @@ def requisicao_consultar_empresa(nCodEmp):
             'telefone1_numero': dados_empresa.get('telefone1_numero', '')
         }
     else:
-        print("Erro na requisição:", response.status_code)
-        return None
+        raise Exception(f"Erro ao consultar empresa. Status code: {response.status_code}, Response: {response.text}")
 
 def requisicao_consulta_endereco_dest(nCodCli):
-    app_key = "1826443506888"
-    app_secret = "c9e60167e96e156e2655a92fdcd77df7"
     url = "https://app.omie.com.br/api/v1/geral/clientes/"
     dados = {
         "call": "ConsultarCliente",
-        "app_key": app_key,
-        "app_secret": app_secret,
+        "app_key": "1826443506888",
+        "app_secret": "c9e60167e96e156e2655a92fdcd77df7",
         "param": [
             {
-                "codigo_cliente_omie": nCodCli,
-                "codigo_cliente_integracao": ""
+                "codigo_cliente_omie": nCodCli
             }
         ]
     }
-    headers = {"Content-Type": "application/json"}
-    response = requests.post(url, data=json.dumps(dados), headers=headers)
+    response = requests.post(url, json=dados)
 
     if response.status_code == 200:
         resposta_json = response.json()
@@ -108,63 +101,33 @@ def requisicao_consulta_endereco_dest(nCodCli):
         endereco_completo = f"{endereco}, {endereco_numero}, {bairro}, {cidade}, {estado}, {complemento}, {cep}"
         return endereco_completo
     else:
-        print("Erro na requisição. Código de status:", response.status_code)
-        print(response.text)
-        return None
+        raise Exception(f"Erro ao consultar endereço. Status code: {response.status_code}, Response: {response.text}")
 
 def consultar_nf():
-    nNF = entry_nf.get()
-    resultado_nf = requisicao_consulta_nf("0", nNF)
-    if resultado_nf:
+    try:
+        nNF = entry_nf.get()
+        resultado_nf = requisicao_consulta_nf("0", nNF)
         razao_social_dest, cnpj_cpf_dest, numero_nf_dest, tp_nf, detalhes_produtos, nCodEmp, nCodCli = resultado_nf
+
         info_nf_label.config(text=f"Razão Social (dest): {razao_social_dest}\nCNPJ/CPF (dest): {cnpj_cpf_dest}\nNúmero NF (dest): {numero_nf_dest}\nTipo NF: {tp_nf}\n")
-        
+
         produtos_info = ""
         for idx, detalhe in enumerate(detalhes_produtos, start=1):
             produtos_info += f"Produto {idx}:\nCódigo do Produto: {detalhe['cProd']}\nDescrição: {detalhe['xProd']}\nValor do Produto: {detalhe['vProd']}\nQuantidade: {detalhe['qCom']}\n\n"
-        
+
         produtos_nf_label.config(text=produtos_info)
-        
+
         threading.Thread(target=consultar_empresa_endereco, args=(nCodEmp, nCodCli, resultado_nf)).start()
 
+    except Exception as e:
+        messagebox.showerror("Erro", str(e))
+
 def consultar_empresa_endereco(nCodEmp, nCodCli, resultado_nf):
-    dados_empresa = requisicao_consultar_empresa(nCodEmp)
-    if dados_empresa:
+    try:
+        dados_empresa = requisicao_consultar_empresa(nCodEmp)
         empresa_info_label.config(text=f"Razão Social: {dados_empresa['razao_social']}\nTelefone: ({dados_empresa['telefone1_ddd']}) {dados_empresa['telefone1_numero']}")
-            
+
         endereco_dest = requisicao_consulta_endereco_dest(nCodCli)
-        if endereco_dest:
-            threading.Thread(target=gerar_planilha_excel, args=(resultado_nf, dados_empresa, endereco_dest)).start()
-
-def gerar_planilha_excel(resultado_nf, dados_empresa, endereco_dest):
-    razao_social_dest, cnpj_cpf_dest, numero_nf_dest, tp_nf, detalhes_produtos, _, _ = resultado_nf
-    
-    # Criar um novo Workbook
-    wb = Workbook()
-    ws = wb.active
-
-    # Definir os cabeçalhos da planilha
-    ws.append(["Nota Fiscal", "Remetente", "Destinatário", "CNPJ/CPF Destinatário", "Endereço Destinatário", "Descrição Produto", "Código Produto", "Quantidade", "Valor Produto"])
-
-    # Adicionar dados na planilha
-    for produto in detalhes_produtos:
-        ws.append([
-            numero_nf_dest,
-            dados_empresa['razao_social'],
-            razao_social_dest,
-            cnpj_cpf_dest,
-            endereco_dest,
-            produto['xProd'],
-            produto['cProd'],
-            produto['qCom'],
-            produto['vProd']
-        ])
-
-    # Salvar o arquivo no diretório onde o app está sendo executado
-    excel_filename = f"plan_{numero_nf_dest}.xlsx"
-    diretorio_atual = os.getcwd()  # Diretório atual onde o app está rodando
-    caminho_arquivo = os.path.join(diretorio_atual, excel_filename)
-    wb.save(caminho_arquivo)
-    print(f"Planilha salva em: {caminho_arquivo}")
-
-
+        empresa_info_label.config(text=empresa_info_label.cget("text") + f"\nEndereço: {endereco_dest}")
+    except Exception as e:
+        messagebox.showerror("Erro", str(e))
