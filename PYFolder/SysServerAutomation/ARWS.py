@@ -15,6 +15,9 @@ from arq_requisicao_inclusao_D import requisicao_inclusao_D
 from arq_requisicao_inclusao_O import requisicao_inclusao_O
 from arq_enviar_email import enviar_email
 from arq_lerEstoque import lerEstoque
+from arq_NF_Functions import requisicao_consulta_nf
+from arq_NF_Functions import requisicao_consultar_empresa
+from arq_NF_Functions import requisicao_consulta_endereco_dest
 
 app = FastAPI(title="Minha API FastAPI", version="1.0.0")
 queue = Queue()
@@ -164,7 +167,7 @@ def webhook_end_l():
         raise HTTPException(status_code=500, detail=str(e))
     
 @app.post("/EtiquetaNota")
-def webhook_end_E():
+async def webhook_end_E(request: Request):
     """Read the fiscal notes with no exception in the Omie Sistem."""
     try:
         data = await request.json()
@@ -173,9 +176,10 @@ def webhook_end_E():
         if not numero_serie_input:
             raise HTTPException(status_code=400, detail="numeroSerie is required")
 
-        return
+        return {"message": "Data received successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
 
 @app.post("/NotaFiscal")
 async def webhook_end_NF(request: Request):

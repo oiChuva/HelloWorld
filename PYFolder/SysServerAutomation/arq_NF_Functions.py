@@ -102,32 +102,3 @@ def requisicao_consulta_endereco_dest(nCodCli):
         return endereco_completo
     else:
         raise Exception(f"Erro ao consultar endereço. Status code: {response.status_code}, Response: {response.text}")
-
-def consultar_nf():
-    try:
-        nNF = entry_nf.get()
-        resultado_nf = requisicao_consulta_nf("0", nNF)
-        razao_social_dest, cnpj_cpf_dest, numero_nf_dest, tp_nf, detalhes_produtos, nCodEmp, nCodCli = resultado_nf
-
-        info_nf_label.config(text=f"Razão Social (dest): {razao_social_dest}\nCNPJ/CPF (dest): {cnpj_cpf_dest}\nNúmero NF (dest): {numero_nf_dest}\nTipo NF: {tp_nf}\n")
-
-        produtos_info = ""
-        for idx, detalhe in enumerate(detalhes_produtos, start=1):
-            produtos_info += f"Produto {idx}:\nCódigo do Produto: {detalhe['cProd']}\nDescrição: {detalhe['xProd']}\nValor do Produto: {detalhe['vProd']}\nQuantidade: {detalhe['qCom']}\n\n"
-
-        produtos_nf_label.config(text=produtos_info)
-
-        threading.Thread(target=consultar_empresa_endereco, args=(nCodEmp, nCodCli, resultado_nf)).start()
-
-    except Exception as e:
-        messagebox.showerror("Erro", str(e))
-
-def consultar_empresa_endereco(nCodEmp, nCodCli, resultado_nf):
-    try:
-        dados_empresa = requisicao_consultar_empresa(nCodEmp)
-        empresa_info_label.config(text=f"Razão Social: {dados_empresa['razao_social']}\nTelefone: ({dados_empresa['telefone1_ddd']}) {dados_empresa['telefone1_numero']}")
-
-        endereco_dest = requisicao_consulta_endereco_dest(nCodCli)
-        empresa_info_label.config(text=empresa_info_label.cget("text") + f"\nEndereço: {endereco_dest}")
-    except Exception as e:
-        messagebox.showerror("Erro", str(e))
