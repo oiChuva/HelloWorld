@@ -33,3 +33,58 @@
 2025-04-09 10:37:37 - INFO - Application shutdown complete.
 2025-04-09 10:37:37 - INFO - Finished server process [5192]
 2025-04-09 10:37:38 - INFO - Stopping reloader process [4276]
+2025-04-09 10:38:46 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 10:38:46 - INFO - Uvicorn running on https://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 10:38:46 - INFO - Started reloader process [8900] using StatReload
+2025-04-09 10:38:48 - INFO - Started server process [7488]
+2025-04-09 10:38:48 - INFO - Waiting for application startup.
+2025-04-09 10:38:48 - INFO - Application startup complete.
+2025-04-09 10:39:00 - INFO - 192.168.88.16:54332 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:39:19 - INFO - 192.168.88.16:54341 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:39:34 - INFO - 192.168.88.16:54345 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:44:27 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 10:44:27 - INFO - Shutting down
+2025-04-09 10:44:27 - INFO - Waiting for application shutdown.
+2025-04-09 10:44:27 - INFO - Application shutdown complete.
+2025-04-09 10:44:27 - INFO - Finished server process [7488]
+2025-04-09 10:44:30 - INFO - Started server process [4584]
+2025-04-09 10:44:30 - INFO - Waiting for application startup.
+2025-04-09 10:44:30 - INFO - Application startup complete.
+2025-04-09 10:44:53 - INFO - 192.168.88.16:54561 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:45:12 - INFO - 192.168.88.16:54565 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:45:58 - WARNING - StatReload detected changes in 'arq_lerEstoque.py'. Reloading...
+2025-04-09 10:45:58 - INFO - Shutting down
+2025-04-09 10:45:58 - INFO - Waiting for application shutdown.
+2025-04-09 10:45:58 - INFO - Application shutdown complete.
+2025-04-09 10:45:58 - INFO - Finished server process [4584]
+2025-04-09 10:46:01 - INFO - Started server process [7344]
+2025-04-09 10:46:01 - INFO - Waiting for application startup.
+2025-04-09 10:46:01 - INFO - Application startup complete.
+2025-04-09 10:46:17 - INFO - 192.168.88.16:54735 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:46:21 - INFO - 192.168.88.16:54717 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:46:55 - WARNING - StatReload detected changes in 'arq_lerEstoque.py'. Reloading...
+2025-04-09 10:46:55 - INFO - Shutting down
+2025-04-09 10:46:55 - INFO - Waiting for application shutdown.
+2025-04-09 10:46:55 - INFO - Application shutdown complete.
+2025-04-09 10:46:55 - INFO - Finished server process [7344]
+2025-04-09 10:46:59 - INFO - Started server process [4208]
+2025-04-09 10:46:59 - INFO - Waiting for application startup.
+2025-04-09 10:46:59 - INFO - Application startup complete.
+2025-04-09 10:47:01 - WARNING - StatReload detected changes in 'arq_lerEstoque.py'. Reloading...
+2025-04-09 10:47:01 - INFO - Shutting down
+2025-04-09 10:47:01 - INFO - Waiting for application shutdown.
+2025-04-09 10:47:01 - INFO - Application shutdown complete.
+2025-04-09 10:47:01 - INFO - Finished server process [4208]
+2025-04-09 10:47:04 - INFO - Started server process [7156]
+2025-04-09 10:47:04 - INFO - Waiting for application startup.
+2025-04-09 10:47:04 - INFO - Application startup complete.
+2025-04-09 10:47:17 - INFO - 192.168.88.16:54756 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:47:19 - INFO - 192.168.88.16:54755 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:47:39 - INFO - 192.168.88.16:54767 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54767 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54768 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54767 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54769 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54770 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54771 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54768 - "POST /sendmail HTTP/1.1" 200

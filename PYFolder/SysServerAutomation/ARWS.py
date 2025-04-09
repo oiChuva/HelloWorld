@@ -5,6 +5,7 @@ from threading import Thread
 from datetime import datetime
 from fastapi.responses import HTMLResponse
 from starlette.middleware.cors import CORSMiddleware
+import logging
 
 # Importação das funções existentes
 from arq_consultar_equipamento import consultar_equipamento
@@ -18,6 +19,10 @@ from arq_lerEstoque import lerEstoque
 from arq_NF_Functions import requisicao_consulta_nf
 from arq_NF_Functions import requisicao_consultar_empresa
 from arq_NF_Functions import requisicao_consulta_endereco_dest
+
+# External SysServerAutomation/arq_NF_Functions.py
+app_key = "1826443506888"
+app_secret = "c9e60167e96e156e2655a92fdcd77df7"
 
 app = FastAPI(title="Minha API FastAPI", version="1.0.0")
 queue = Queue()
@@ -35,6 +40,15 @@ app.add_middleware(
 queue_thread = Thread(target=process_queue)
 queue_thread.daemon = True
 queue_thread.start()
+
+logger = logging.getLogger("uvicorn.access")
+
+@app.middleware("http")
+async def log_request_body(request: Request, call_next):
+    body = await request.body()
+    logger.info(f"Client: {request.client.host}, Method: {request.method}, Path: {request.url.path}, Body: {body.decode('utf-8')}")
+    response = await call_next(request)
+    return response
 
 @app.get("/test-page", response_class=HTMLResponse)
 async def test_page():
