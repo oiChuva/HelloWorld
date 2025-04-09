@@ -10,4 +10,4 @@ def process_queue():
         if 'error' not in result:
             # Não faz nada aqui, porque o email já é enviado na função consultar_equipamento
             pass
-        queue.task_done()
+            queue.task_done()

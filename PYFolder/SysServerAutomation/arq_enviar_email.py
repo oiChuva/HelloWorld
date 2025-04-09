@@ -23,7 +23,7 @@ def enviar_email(numero_serie, codOMIE):
         attachment.PropertyAccessor.SetProperty("http://schemas.microsoft.com/mapi/proptag/0x3712001F", attachment_cid)
         
         # Configurar e-mail
-        email.To = "cadastro@opusmedical.com.br; augusto@opusmedical.com.br; almoxarifado@opusmedical.com.br; marcelo@opusmedical.com.br; celio@opusmedical.com.br; comercial@opusmedical.com.br; logistica@opusmedical.com.br; suportetecnico@opusmedical.com.br"
+        email.To = "cadastro@opusmedical.com.br; almoxarifado@opusmedical.com.br; marcelo@opusmedical.com.br; celio@opusmedical.com.br; comercial@opusmedical.com.br; logistica@opusmedical.com.br; suportetecnico@opusmedical.com.br"
         email.Subject = "Cadastrado"
         email.HTMLBody = f""" <p>Itens cadastrados.</p> 
         <p>O equipamento com número de série {numero_serie} foi cadastrado com sucesso no OMIE.</p>

@@ -138,6 +138,8 @@ async def webhook_end_c(request: Request):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+sent_emails = set()
+
 @app.post("/sendmail")
 async def webhook_end_s(request: Request):
     """Recebe dados para envio de e-mail."""
@@ -147,7 +149,11 @@ async def webhook_end_s(request: Request):
         if not ht_mail:
             raise HTTPException(status_code=400, detail="ht_mail is required")
         
-        Send_Email(ht_mail)  # Pass ht_mail to Send_Email
+        if ht_mail in sent_emails:
+            return JSONResponse(content={"message": "E-mail já enviado anteriormente"}, status_code=200)
+        
+        sent_emails.add(ht_mail)
+        Send_Email(ht_mail)
         return JSONResponse(content={"message": "Recebido com sucesso pelo Endpoint"}, status_code=200)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
