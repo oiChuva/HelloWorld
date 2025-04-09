@@ -244,4 +244,4 @@ async def webhook_end_NF(request: Request):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload`
+# Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload --log-config log_config.yaml`
