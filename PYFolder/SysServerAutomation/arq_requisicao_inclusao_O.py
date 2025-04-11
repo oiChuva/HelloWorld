@@ -12,7 +12,7 @@ def requisicao_inclusao_O(codigo, ncm, descricao_completa, marca, modelo, unidad
                                 "app_secret": app_secret,
                                 "param": [
                                     {
-                                        "codigo_produto_integracao": codigo,
+                                        "codigo_produto_integracao": f"{codigo}",  # Concatena o valor de `codigo` com o texto "1"
                                         "codigo": codigo,
                                         "ncm": ncm,
                                         "descricao": descricao_completa,

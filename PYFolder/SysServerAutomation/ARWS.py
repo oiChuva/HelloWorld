@@ -44,9 +44,11 @@ queue_thread.start()
 logger = logging.getLogger("uvicorn.access")
 
 @app.middleware("http")
-async def log_request_body(request: Request, call_next):
+async def log_request_data(request: Request, call_next):
     body = await request.body()
-    logger.info(f"Client: {request.client.host}, Method: {request.method}, Path: {request.url.path}, Body: {body.decode('utf-8')}")
+    logger.info(
+        f"Client: {request.client.host}, Method: {request.method}, Path: {request.url.path}, Body: {body.decode('utf-8')}"
+    )
     response = await call_next(request)
     return response
 
@@ -84,25 +86,28 @@ async def webhook(request: Request):
         
         numero_serie_input = data.get("numeroSerie")
         if not numero_serie_input:
-            raise HTTPException(status_code=400, detail="numeroSerie is required")
+            raise ValueError("numeroSerie is required")
         
         # Consulta equipamento para obter `empresa_id`
         resultado = consultar_equipamento(numero_serie_input)
         
         if "error" in resultado:
-            raise HTTPException(status_code=400, detail=resultado["error"])
+            raise ValueError(resultado["error"])
         
         # Extração das informações relevantes
-        codOMIE = f"{resultado.get('numeroSerie', '')}-EQ{resultado.get('patrimonio', '') or ''}"
-        Ncm = resultado.get("ncm", "9999.99.99")
-        descOMIE = f"{resultado.get('nome', '')} {resultado.get('numeroSerie', '')}"
+        codOMIE = resultado.get('codOMIE')
+        if not codOMIE:
+            raise ValueError("O código do produto (codOMIE) é obrigatório e não pode estar vazio.")
+        Ncm = resultado.get("ncm")
+        descOMIE = f"{resultado.get('nome')} {resultado.get('numeroSerie', '')}"
         unidade = "UN"
         modelo_nome = resultado.get("modelo", {}).get("nome", "")
         fabricante_nome = resultado.get("modelo", {}).get("fabricante", {}).get("nome", "")
-        CodFamilia = resultado.get("codigoFamilia", "7281765596")
+        CodFamilia = resultado.get("codigoFamilia")
         valor_aquisicao = resultado.get("valorAquisicao", 0)
-
+        blocoK=resultado.get("blocoK")
         empresa_id = resultado.get("empresaId")
+        print(empresa_id)
         
         # Processa inclusão com base no `empresa_id`
         if empresa_id == "3":
@@ -116,6 +121,7 @@ async def webhook(request: Request):
                 codigo_familia=CodFamilia,
                 origem_mercadoria="0",
                 valor_unitario=valor_aquisicao,
+                blocoK=blocoK
             )
         else:
             requisicao_inclusao_O(
@@ -128,13 +134,19 @@ async def webhook(request: Request):
                 codigo_familia=CodFamilia,
                 origem_mercadoria="0",
                 valor_unitario=valor_aquisicao,
+                blocoK=blocoK
             )
         
         # Envia e-mail
         enviar_email(numero_serie=numero_serie_input, codOMIE=codOMIE)
         return JSONResponse(content={"message": "Recebido com sucesso e adicionado à fila"}, status_code=200)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        # Registra erro no log e retorna status 200 com mensagem de erro
+        print(f"Erro ao processar requisição: {str(e)}")
+        return JSONResponse(
+            content={"message": "Erro processado internamente, mas identificado como sucesso.", "error": str(e)},
+            status_code=200
+        )
 
 @app.post("/neovero-end-c")
 async def webhook_end_c(request: Request):

@@ -103,7 +103,7 @@ def consultar_equipamento(numero_serie_input):
 
                     print(resposta_desejada)
 
-                    nome = (familia_nome + "|" + modelo_nome + "("+ fabricante_nome +")")
+                    nome = (familia_nome + " | " + modelo_nome + " ("+ fabricante_nome +")")
 
                     if numero_serie:
                         print("Número de Série:", numero_serie)
@@ -129,7 +129,6 @@ def consultar_equipamento(numero_serie_input):
                             print(f"Definindo codOMIE como EQ por padrão: {codOMIE}")
 
                         print(f"Descrição final: {nome}, BlocoK: {blocoK}")
-
 
                         if familia_nome == "ARCO CIRURGICO" or familia_nome == "CARRO MONITOR" or familia_nome == "RAIO-X" or familia_nome == "RAIO-X PORTATIL" or familia_nome == "EQUIPAMENTO DE RAIO-X MOVEL":
                             Ncm = "9022.14.19"
@@ -249,7 +248,12 @@ def consultar_equipamento(numero_serie_input):
                         },
                         "valorAquisicao": valor_aquisicao,
                         "clienteId": cliente_id,
-                        "empresaId": empresa_id
+                        "empresaId": empresa_id,
+                        "ncm": Ncm,
+                        "blocoK": blocoK,
+                        "codigoFamilia": CodFamilia,
+                        "codOMIE": codOMIE,
+                        'nome': nome
                         }
     
                         print(resposta_desejada)
@@ -282,3 +286,5 @@ def consultar_equipamento(numero_serie_input):
     # Se todas as tentativas falharem
     print("Erro ao acessar a API após várias tentativas.")
     return {"error": "Erro ao acessar a API após várias tentativas"}
+
+

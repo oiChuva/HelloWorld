@@ -4,7 +4,7 @@ formatters:
     format: "%(asctime)s - %(levelname)s - %(message)s"
     datefmt: "%Y-%m-%d %H:%M:%S"
   request:
-    format: "%(asctime)s - %(levelname)s - %(client_addr)s - %(method)s %(path)s - Body: %(body)s"
+    format: "%(asctime)s - %(levelname)s - %(message)s"
     datefmt: "%Y-%m-%d %H:%M:%S"
 handlers:
   console:
