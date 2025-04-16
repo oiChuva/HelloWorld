@@ -1,0 +1,491 @@
+2025-04-09 10:20:36 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 10:20:36 - INFO - Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 10:20:36 - INFO - Started reloader process [604] using StatReload
+2025-04-09 10:22:10 - INFO - Stopping reloader process [604]
+2025-04-09 10:22:17 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 10:22:17 - INFO - Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 10:22:17 - INFO - Started reloader process [4276] using StatReload
+2025-04-09 10:22:22 - INFO - Started server process [5192]
+2025-04-09 10:22:22 - INFO - Waiting for application startup.
+2025-04-09 10:22:22 - INFO - Application startup complete.
+2025-04-09 10:28:45 - WARNING - Invalid HTTP request received.
+2025-04-09 10:28:45 - WARNING - Invalid HTTP request received.
+2025-04-09 10:28:50 - WARNING - Invalid HTTP request received.
+2025-04-09 10:28:50 - WARNING - Invalid HTTP request received.
+2025-04-09 10:29:13 - WARNING - Invalid HTTP request received.
+2025-04-09 10:29:13 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:29 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:29 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:30 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:30 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:30 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:30 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:32 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:32 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:32 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:32 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:42 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:42 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:42 - WARNING - Invalid HTTP request received.
+2025-04-09 10:34:42 - WARNING - Invalid HTTP request received.
+2025-04-09 10:37:37 - INFO - Shutting down
+2025-04-09 10:37:37 - INFO - Waiting for application shutdown.
+2025-04-09 10:37:37 - INFO - Application shutdown complete.
+2025-04-09 10:37:37 - INFO - Finished server process [5192]
+2025-04-09 10:37:38 - INFO - Stopping reloader process [4276]
+2025-04-09 10:38:46 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 10:38:46 - INFO - Uvicorn running on https://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 10:38:46 - INFO - Started reloader process [8900] using StatReload
+2025-04-09 10:38:48 - INFO - Started server process [7488]
+2025-04-09 10:38:48 - INFO - Waiting for application startup.
+2025-04-09 10:38:48 - INFO - Application startup complete.
+2025-04-09 10:39:00 - INFO - 192.168.88.16:54332 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:39:19 - INFO - 192.168.88.16:54341 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:39:34 - INFO - 192.168.88.16:54345 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:44:27 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 10:44:27 - INFO - Shutting down
+2025-04-09 10:44:27 - INFO - Waiting for application shutdown.
+2025-04-09 10:44:27 - INFO - Application shutdown complete.
+2025-04-09 10:44:27 - INFO - Finished server process [7488]
+2025-04-09 10:44:30 - INFO - Started server process [4584]
+2025-04-09 10:44:30 - INFO - Waiting for application startup.
+2025-04-09 10:44:30 - INFO - Application startup complete.
+2025-04-09 10:44:53 - INFO - 192.168.88.16:54561 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:45:12 - INFO - 192.168.88.16:54565 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:45:58 - WARNING - StatReload detected changes in 'arq_lerEstoque.py'. Reloading...
+2025-04-09 10:45:58 - INFO - Shutting down
+2025-04-09 10:45:58 - INFO - Waiting for application shutdown.
+2025-04-09 10:45:58 - INFO - Application shutdown complete.
+2025-04-09 10:45:58 - INFO - Finished server process [4584]
+2025-04-09 10:46:01 - INFO - Started server process [7344]
+2025-04-09 10:46:01 - INFO - Waiting for application startup.
+2025-04-09 10:46:01 - INFO - Application startup complete.
+2025-04-09 10:46:17 - INFO - 192.168.88.16:54735 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:46:21 - INFO - 192.168.88.16:54717 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:46:55 - WARNING - StatReload detected changes in 'arq_lerEstoque.py'. Reloading...
+2025-04-09 10:46:55 - INFO - Shutting down
+2025-04-09 10:46:55 - INFO - Waiting for application shutdown.
+2025-04-09 10:46:55 - INFO - Application shutdown complete.
+2025-04-09 10:46:55 - INFO - Finished server process [7344]
+2025-04-09 10:46:59 - INFO - Started server process [4208]
+2025-04-09 10:46:59 - INFO - Waiting for application startup.
+2025-04-09 10:46:59 - INFO - Application startup complete.
+2025-04-09 10:47:01 - WARNING - StatReload detected changes in 'arq_lerEstoque.py'. Reloading...
+2025-04-09 10:47:01 - INFO - Shutting down
+2025-04-09 10:47:01 - INFO - Waiting for application shutdown.
+2025-04-09 10:47:01 - INFO - Application shutdown complete.
+2025-04-09 10:47:01 - INFO - Finished server process [4208]
+2025-04-09 10:47:04 - INFO - Started server process [7156]
+2025-04-09 10:47:04 - INFO - Waiting for application startup.
+2025-04-09 10:47:04 - INFO - Application startup complete.
+2025-04-09 10:47:17 - INFO - 192.168.88.16:54756 - "GET /test-page HTTP/1.1" 200
+2025-04-09 10:47:19 - INFO - 192.168.88.16:54755 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:47:39 - INFO - 192.168.88.16:54767 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54767 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54768 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54767 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54769 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54770 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54771 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:47:40 - INFO - 192.168.88.16:54768 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 10:54:51 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 10:55:21 - INFO - Shutting down
+2025-04-09 10:55:21 - INFO - Waiting for application shutdown.
+2025-04-09 10:55:21 - INFO - Application shutdown complete.
+2025-04-09 10:55:21 - INFO - Finished server process [7156]
+2025-04-09 10:55:30 - INFO - Stopping reloader process [8900]
+2025-04-09 10:58:11 - INFO - Started server process [6224]
+2025-04-09 10:58:11 - INFO - Waiting for application startup.
+2025-04-09 10:58:11 - INFO - Application startup complete.
+2025-04-09 10:58:12 - INFO - Shutting down
+2025-04-09 10:58:12 - INFO - Waiting for application shutdown.
+2025-04-09 10:58:12 - INFO - Application shutdown complete.
+2025-04-09 10:58:12 - INFO - Finished server process [6224]
+2025-04-09 10:58:15 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 10:58:15 - INFO - Uvicorn running on https://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 10:58:15 - INFO - Started reloader process [5200] using StatReload
+2025-04-09 10:58:17 - INFO - Started server process [8376]
+2025-04-09 10:58:17 - INFO - Waiting for application startup.
+2025-04-09 10:58:17 - INFO - Application startup complete.
+2025-04-09 10:58:20 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
+2025-04-09 10:58:20 - INFO - 192.168.88.62:60190 - "OPTIONS /NotaFiscal HTTP/1.1" 200
+2025-04-09 10:58:20 - INFO - Client: 192.168.88.62, Method: POST, Path: /NotaFiscal, Body: {"numNF":"3949"}
+2025-04-09 10:58:22 - INFO - 192.168.88.62:60190 - "POST /NotaFiscal HTTP/1.1" 200
+2025-04-09 10:58:22 - INFO - Client: 192.168.88.62, Method: POST, Path: /NotaFiscal, Body: {"numNF":"3949"}
+2025-04-09 10:58:24 - INFO - 192.168.88.62:60193 - "POST /NotaFiscal HTTP/1.1" 200
+2025-04-09 10:58:40 - INFO - Client: 192.168.88.16, Method: GET, Path: /LerEst, Body: 
+2025-04-09 10:58:52 - INFO - 192.168.88.16:55021 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 10:59:13 - INFO - Client: 192.168.88.16, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-09 10:59:13 - INFO - 192.168.88.16:55091 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-09 10:59:13 - INFO - Client: 192.168.88.16, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> KIT TECLADO E MOUSE | SEM FIO USB ABNT KM3322W/MK220 | MC1K0002</p>\n                <p><b>Saldo:</b> 1</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Isaque</p>\n                <p><b>Motivo ou OS:</b> Teste 2 do log</p>\n                <p><b>Data:</b> 2025-04-09</p>\n            "}
+2025-04-09 10:59:13 - INFO - 192.168.88.16:55091 - "POST /sendmail HTTP/1.1" 200
+2025-04-09 13:07:41 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 14:43:24 - INFO - 192.168.88.1:56711 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 14:44:11 - INFO - Shutting down
+2025-04-09 14:44:11 - INFO - Waiting for application shutdown.
+2025-04-09 14:44:11 - INFO - Application shutdown complete.
+2025-04-09 14:44:11 - INFO - Finished server process [8376]
+2025-04-09 14:44:12 - INFO - Stopping reloader process [5200]
+2025-04-09 14:44:14 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 14:44:14 - INFO - Uvicorn running on https://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 14:44:14 - INFO - Started reloader process [3972] using StatReload
+2025-04-09 14:44:16 - INFO - Started server process [7692]
+2025-04-09 14:44:16 - INFO - Waiting for application startup.
+2025-04-09 14:44:16 - INFO - Application startup complete.
+2025-04-09 14:44:55 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
+2025-04-09 14:44:55 - INFO - 192.168.88.62:62564 - "OPTIONS /NotaFiscal HTTP/1.1" 200
+2025-04-09 14:44:55 - INFO - Client: 192.168.88.62, Method: POST, Path: /NotaFiscal, Body: {"numNF":"3950"}
+2025-04-09 14:44:57 - INFO - 192.168.88.62:62564 - "POST /NotaFiscal HTTP/1.1" 200
+2025-04-09 15:23:16 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 15:23:16 - INFO - 192.168.88.1:37839 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 15:23:17 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ00978000"}
+2025-04-09 15:23:18 - INFO - 192.168.88.1:37839 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:23:42 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
+2025-04-09 15:23:42 - INFO - 192.168.88.1:38672 - "GET /test-page HTTP/1.1" 200
+2025-04-09 15:23:42 - INFO - Client: 192.168.88.1, Method: GET, Path: /favicon.ico, Body: 
+2025-04-09 15:23:42 - INFO - 192.168.88.1:38672 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-09 15:24:10 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ00978000"}
+2025-04-09 15:24:11 - INFO - 192.168.88.1:37912 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:24:24 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
+2025-04-09 15:24:24 - INFO - 192.168.88.1:38004 - "GET /test-page HTTP/1.1" 200
+2025-04-09 15:25:04 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 15:25:04 - INFO - 192.168.88.1:37995 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:25:30 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-09 15:25:30 - INFO - 192.168.88.1:38135 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-09 15:25:30 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-09 15:25:38 - INFO - 192.168.88.1:38135 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 15:26:34 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
+2025-04-09 15:26:34 - INFO - 192.168.88.1:40416 - "GET /test-page HTTP/1.1" 200
+2025-04-09 15:26:53 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 15:26:54 - INFO - 192.168.88.1:40905 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:27:10 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 15:27:11 - INFO - 192.168.88.1:40589 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:28:51 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 15:28:52 - INFO - 192.168.88.1:41769 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:42:24 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-09 15:42:24 - INFO - 192.168.88.1:51367 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-09 15:42:24 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-09 15:42:30 - INFO - 192.168.88.1:51367 - "GET /LerEst HTTP/1.1" 200
+2025-04-09 15:52:00 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 15:52:00 - INFO - 192.168.88.1:60892 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 15:52:00 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 15:52:01 - INFO - 192.168.88.1:60892 - "POST /neovero-receiver HTTP/1.1" 500
+2025-04-09 15:57:00 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 15:57:12 - INFO - Shutting down
+2025-04-09 15:57:12 - INFO - Waiting for application shutdown.
+2025-04-09 15:57:12 - INFO - Application shutdown complete.
+2025-04-09 15:57:12 - INFO - Finished server process [7692]
+2025-04-09 15:57:17 - INFO - Started server process [4260]
+2025-04-09 15:57:17 - INFO - Waiting for application startup.
+2025-04-09 15:57:17 - INFO - Application startup complete.
+2025-04-09 15:57:27 - WARNING - StatReload detected changes in 'arq_requisicao_inclusao_O.py'. Reloading...
+2025-04-09 15:57:27 - INFO - Shutting down
+2025-04-09 15:57:27 - INFO - Waiting for application shutdown.
+2025-04-09 15:57:27 - INFO - Application shutdown complete.
+2025-04-09 15:57:27 - INFO - Finished server process [4260]
+2025-04-09 15:57:29 - WARNING - StatReload detected changes in 'arq_requisicao_inclusao_D.py'. Reloading...
+2025-04-09 15:57:31 - INFO - Started server process [2484]
+2025-04-09 15:57:31 - INFO - Waiting for application startup.
+2025-04-09 15:57:31 - INFO - Application startup complete.
+2025-04-09 15:57:31 - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\OPUSMANUALSERVER\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\routing.py", line 700, in lifespan
+    await receive()
+  File "C:\Users\OPUSMANUALSERVER\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2025-04-09 15:57:36 - INFO - Started server process [8712]
+2025-04-09 15:57:36 - INFO - Waiting for application startup.
+2025-04-09 15:57:36 - INFO - Application startup complete.
+2025-04-09 15:59:29 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 15:59:29 - INFO - 192.168.88.62:63550 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 15:59:29 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 15:59:31 - INFO - 192.168.88.62:63550 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:00:17 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 16:00:17 - INFO - 192.168.88.1:2495 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:00:17 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 16:00:18 - INFO - 192.168.88.1:2495 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:01:17 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 16:01:17 - INFO - 192.168.88.1:4461 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:01:18 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"A3D0836751"}
+2025-04-09 16:01:19 - INFO - 192.168.88.1:4461 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:01:28 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"99D0833651"}
+2025-04-09 16:01:29 - INFO - 192.168.88.1:4867 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:03:54 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 16:04:14 - INFO - Shutting down
+2025-04-09 16:04:14 - INFO - Waiting for application shutdown.
+2025-04-09 16:04:14 - INFO - Application shutdown complete.
+2025-04-09 16:04:14 - INFO - Finished server process [8712]
+2025-04-09 16:04:18 - INFO - Started server process [1800]
+2025-04-09 16:04:18 - INFO - Waiting for application startup.
+2025-04-09 16:04:18 - INFO - Application startup complete.
+2025-04-09 16:05:34 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 16:05:35 - INFO - 192.168.88.62:63667 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:07:29 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 16:08:18 - INFO - Shutting down
+2025-04-09 16:08:18 - INFO - Waiting for application shutdown.
+2025-04-09 16:08:18 - INFO - Application shutdown complete.
+2025-04-09 16:08:18 - INFO - Finished server process [1800]
+2025-04-09 16:08:21 - INFO - Started server process [1600]
+2025-04-09 16:08:21 - INFO - Waiting for application startup.
+2025-04-09 16:08:21 - INFO - Application startup complete.
+2025-04-09 16:09:13 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 16:09:14 - INFO - 192.168.88.62:63708 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:11:46 - WARNING - StatReload detected changes in 'ARWS.py'. Reloading...
+2025-04-09 16:12:13 - INFO - Shutting down
+2025-04-09 16:12:13 - INFO - Waiting for application shutdown.
+2025-04-09 16:12:13 - INFO - Application shutdown complete.
+2025-04-09 16:12:13 - INFO - Finished server process [1600]
+2025-04-09 16:12:16 - INFO - Started server process [6992]
+2025-04-09 16:12:16 - INFO - Waiting for application startup.
+2025-04-09 16:12:16 - INFO - Application startup complete.
+2025-04-09 16:14:20 - INFO - Client: 192.168.88.156, Method: GET, Path: /test-page, Body: 
+2025-04-09 16:14:20 - INFO - 192.168.88.156:42932 - "GET /test-page HTTP/1.1" 200
+2025-04-09 16:14:20 - INFO - Client: 192.168.88.156, Method: GET, Path: /favicon.ico, Body: 
+2025-04-09 16:14:20 - INFO - 192.168.88.156:42932 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-09 16:14:23 - INFO - Client: 192.168.88.156, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 16:14:23 - INFO - 192.168.88.156:42948 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:14:23 - INFO - Client: 192.168.88.156, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 16:14:25 - INFO - 192.168.88.156:42948 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:14:44 - WARNING - StatReload detected changes in 'arq_requisicao_inclusao_O.py'. Reloading...
+2025-04-09 16:14:44 - INFO - Shutting down
+2025-04-09 16:14:44 - INFO - Waiting for connections to close. (CTRL+C to force quit)
+2025-04-09 16:15:14 - INFO - Waiting for application shutdown.
+2025-04-09 16:15:14 - INFO - Application shutdown complete.
+2025-04-09 16:15:14 - INFO - Finished server process [6992]
+2025-04-09 16:15:17 - INFO - Started server process [6968]
+2025-04-09 16:15:17 - INFO - Waiting for application startup.
+2025-04-09 16:15:17 - INFO - Application startup complete.
+2025-04-09 16:15:22 - INFO - Client: 192.168.88.156, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 16:15:23 - INFO - 192.168.88.156:42588 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:16:11 - WARNING - StatReload detected changes in 'arq_consultar_equipamento.py'. Reloading...
+2025-04-09 16:16:11 - INFO - Shutting down
+2025-04-09 16:16:11 - INFO - Waiting for application shutdown.
+2025-04-09 16:16:11 - INFO - Application shutdown complete.
+2025-04-09 16:16:11 - INFO - Finished server process [6968]
+2025-04-09 16:16:14 - INFO - Started server process [3168]
+2025-04-09 16:16:14 - INFO - Waiting for application startup.
+2025-04-09 16:16:14 - INFO - Application startup complete.
+2025-04-09 16:16:19 - INFO - Client: 192.168.88.156, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"20900BZZ0098000"}
+2025-04-09 16:16:22 - INFO - 192.168.88.156:39912 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:16:39 - WARNING - StatReload detected changes in 'arq_requisicao_inclusao_O.py'. Reloading...
+2025-04-09 16:16:39 - INFO - Shutting down
+2025-04-09 16:16:40 - INFO - Waiting for connections to close. (CTRL+C to force quit)
+2025-04-09 16:16:52 - INFO - Waiting for application shutdown.
+2025-04-09 16:16:52 - INFO - Application shutdown complete.
+2025-04-09 16:16:52 - INFO - Finished server process [3168]
+2025-04-09 16:16:54 - INFO - Started server process [2140]
+2025-04-09 16:16:54 - INFO - Waiting for application startup.
+2025-04-09 16:16:54 - INFO - Application startup complete.
+2025-04-09 16:23:49 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 16:31:32 - INFO - 192.168.88.1:16992 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:31:37 - INFO - Shutting down
+2025-04-09 16:31:37 - INFO - Waiting for application shutdown.
+2025-04-09 16:31:37 - INFO - Application shutdown complete.
+2025-04-09 16:31:37 - INFO - Finished server process [2140]
+2025-04-09 16:31:37 - INFO - Stopping reloader process [3972]
+2025-04-09 16:31:46 - INFO - Will watch for changes in these directories: ['C:\\Users\\OPUSMANUALSERVER\\.vscode\\HelloWorld\\PYFolder\\SysServerAutomation']
+2025-04-09 16:31:46 - INFO - Uvicorn running on https://0.0.0.0:5000 (Press CTRL+C to quit)
+2025-04-09 16:31:46 - INFO - Started reloader process [692] using StatReload
+2025-04-09 16:31:48 - INFO - Started server process [5588]
+2025-04-09 16:31:48 - INFO - Waiting for application startup.
+2025-04-09 16:31:48 - INFO - Application startup complete.
+2025-04-09 16:31:58 - INFO - Client: 192.168.88.156, Method: GET, Path: /test-page, Body: 
+2025-04-09 16:31:58 - INFO - 192.168.88.156:54486 - "GET /test-page HTTP/1.1" 200
+2025-04-09 16:32:01 - INFO - Client: 192.168.88.156, Method: GET, Path: /test-page, Body: 
+2025-04-09 16:32:01 - INFO - 192.168.88.156:54486 - "GET /test-page HTTP/1.1" 200
+2025-04-09 16:32:18 - INFO - Client: 192.168.88.156, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-09 16:32:18 - INFO - 192.168.88.156:44940 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:32:18 - INFO - Client: 192.168.88.156, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"A3D0836751"}
+2025-04-09 16:32:22 - INFO - 192.168.88.156:44940 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-09 16:32:38 - INFO - Client: 192.168.88.156, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"99D0833651"}
+2025-04-09 16:32:40 - INFO - 192.168.88.156:46130 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 08:35:37 - INFO - Client: 192.168.88.73, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 08:35:37 - INFO - 192.168.88.73:50891 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 08:35:37 - INFO - Client: 192.168.88.73, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:35:46 - INFO - 192.168.88.73:50891 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:36:18 - INFO - Client: 192.168.88.73, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 08:36:18 - INFO - 192.168.88.73:50935 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 08:36:18 - INFO - Client: 192.168.88.73, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUMINARIA LED | SOB LINEAR SLIM 36W 6500O B | MC1L0016</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Diane Ferreira</p>\n                <p><b>Motivo ou OS:</b> Manutenção Predial</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:36:18 - INFO - 192.168.88.73:50935 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:38:45 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
+2025-04-10 08:38:45 - INFO - 192.168.88.1:50376 - "GET /test-page HTTP/1.1" 200
+2025-04-10 08:38:46 - INFO - Client: 192.168.88.1, Method: GET, Path: /favicon.ico, Body: 
+2025-04-10 08:38:46 - INFO - 192.168.88.1:50376 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-10 08:38:49 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 08:38:49 - INFO - 192.168.88.1:50384 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 08:38:49 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:39:10 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:39:14 - INFO - 192.168.88.1:50395 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:41:16 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 08:41:16 - INFO - 192.168.88.1:50430 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 08:41:16 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESINFETANTE 5L | MC1D0006</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:41:16 - INFO - 192.168.88.1:50430 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:41:18 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:41:24 - INFO - 192.168.88.1:50430 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:41:50 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> SACO P/LIXO | 40L PCT C/ 80 SACOS | MC1S0003</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:41:50 - INFO - 192.168.88.1:50437 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:41:52 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:41:55 - INFO - 192.168.88.1:50437 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:42:09 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> SACO P/LIXO | 100L PCT C/100 SACOS | MC1S0004</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:42:09 - INFO - 192.168.88.1:50440 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:42:11 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:42:14 - INFO - 192.168.88.1:50440 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:42:29 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | TOALHA INTERFOLHA PCT C/1000FOLHAS 20x20cm | MC1P0005</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:42:29 - INFO - 192.168.88.1:50443 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:42:31 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:42:37 - INFO - 192.168.88.1:50443 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:42:49 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DETERGENTE LIQUIDO | NEUTRO 5L | MC1D0002</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:42:49 - INFO - 192.168.88.1:50448 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:42:51 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:42:55 - INFO - 192.168.88.1:50448 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:43:56 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:44:02 - INFO - 192.168.88.1:50458 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:44:23 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PEDRA SANITARIA | 25G CARTELA C/12UN | MC1P0006</p>\n                <p><b>Saldo:</b> 1</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:44:23 - INFO - 192.168.88.1:50461 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:44:25 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:44:29 - INFO - 192.168.88.1:50461 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:44:44 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> AGUA SANITARIA | 5L | MC1A0002</p>\n                <p><b>Saldo:</b> 9</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:44:44 - INFO - 192.168.88.1:50463 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:44:49 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:44:52 - INFO - 192.168.88.1:50463 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 08:45:10 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> ESPONJA MULTIUSO | DUPLAFACE 100x71mm PCT C/10UN | MC1E0001</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Renan</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:45:10 - INFO - 192.168.88.1:50466 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 08:59:42 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 08:59:42 - INFO - 192.168.88.201:58440 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 08:59:42 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
+2025-04-10 08:59:49 - INFO - 192.168.88.201:58440 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 09:01:39 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 09:01:39 - INFO - 192.168.88.201:58522 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 09:01:39 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> TONER | BROTHER LASER TN2370/TN660 | MC1T0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSIÇÃO</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 09:01:39 - INFO - 192.168.88.201:58522 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 09:41:27 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 09:41:27 - INFO - 192.168.88.201:59707 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 09:41:27 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
+2025-04-10 09:41:38 - INFO - 192.168.88.201:59707 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 10:22:16 - INFO - Client: 192.168.88.62, Method: GET, Path: /test-page, Body: 
+2025-04-10 10:22:16 - INFO - 192.168.88.62:60188 - "GET /test-page HTTP/1.1" 200
+2025-04-10 10:22:16 - INFO - Client: 192.168.88.62, Method: GET, Path: /favicon.ico, Body: 
+2025-04-10 10:22:16 - INFO - 192.168.88.62:60188 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-10 10:22:29 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /neovero-receiver, Body: 
+2025-04-10 10:22:29 - INFO - 192.168.88.62:60195 - "OPTIONS /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:22:29 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"01C24116 "}
+2025-04-10 10:22:31 - INFO - 192.168.88.62:60197 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:22:43 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"01C24114"}
+2025-04-10 10:22:46 - INFO - 192.168.88.62:60203 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:22:55 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"01C24115"}
+2025-04-10 10:22:58 - INFO - 192.168.88.62:60205 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:23:05 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"12B124148"}
+2025-04-10 10:23:07 - INFO - 192.168.88.62:60208 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:23:13 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"12B124149"}
+2025-04-10 10:23:16 - INFO - 192.168.88.62:60210 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:23:21 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"12B124154"}
+2025-04-10 10:23:23 - INFO - 192.168.88.62:60213 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:23:29 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"12B124150"}
+2025-04-10 10:23:31 - INFO - 192.168.88.62:60215 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 10:24:30 - INFO - Client: 192.168.88.62, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"01C24116"}
+2025-04-10 10:24:32 - INFO - 192.168.88.62:60222 - "POST /neovero-receiver HTTP/1.1" 200
+2025-04-10 11:00:32 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 11:00:32 - INFO - 192.168.88.201:50689 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 11:00:32 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
+2025-04-10 11:00:40 - INFO - 192.168.88.201:50689 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 11:13:36 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 11:13:36 - INFO - 192.168.88.201:50995 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 11:13:36 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> SULFITE | 75g PACOTE 500 FOLHAS DE PAPEL | MC1S0012</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSIÇÃO</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 11:13:36 - INFO - 192.168.88.201:50995 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 11:13:42 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 11:13:42 - INFO - 192.168.88.201:51014 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 11:13:42 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
+2025-04-10 11:13:48 - INFO - 192.168.88.201:51014 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 13:41:28 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 13:41:28 - INFO - 192.168.88.1:49792 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 13:41:28 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 13:41:35 - INFO - 192.168.88.1:49792 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 13:42:20 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 13:42:20 - INFO - 192.168.88.1:49801 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 13:42:20 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUVA PARA PROCEDIMENTO NAO CIRURGICO | NITRILICA AZUL SEM PO TAMANHO XG C/100UN | MC1L0008</p>\n                <p><b>Saldo:</b> 4</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Danilo</p>\n                <p><b>Motivo ou OS:</b> 202500459</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 13:42:20 - INFO - 192.168.88.1:49801 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 13:42:54 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
+2025-04-10 13:42:54 - INFO - 192.168.88.1:55628 - "GET /test-page HTTP/1.1" 200
+2025-04-10 13:42:54 - INFO - Client: 192.168.88.1, Method: GET, Path: /favicon.ico, Body: 
+2025-04-10 13:42:54 - INFO - 192.168.88.1:55628 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-10 13:42:57 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 13:42:57 - INFO - 192.168.88.1:55630 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 13:42:57 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 13:43:00 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 13:43:03 - INFO - 192.168.88.1:55630 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 13:43:03 - INFO - 192.168.88.1:49809 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 13:46:05 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 13:46:05 - INFO - 192.168.88.1:50486 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 13:46:05 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 13:46:10 - INFO - 192.168.88.1:50486 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 14:14:58 - INFO - Client: 192.168.88.201, Method: GET, Path: /test-page, Body: 
+2025-04-10 14:14:58 - INFO - 192.168.88.201:53364 - "GET /test-page HTTP/1.1" 200
+2025-04-10 14:14:58 - INFO - Client: 192.168.88.201, Method: GET, Path: /favicon.ico, Body: 
+2025-04-10 14:14:58 - INFO - 192.168.88.201:53364 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-10 14:18:48 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 14:18:48 - INFO - 192.168.88.1:50709 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 14:18:48 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUVA PARA PROCEDIMENTO NAO CIRURGICO | NITRILICA AZUL SEM PO TAMANHO XG C/100UN | MC1L0008</p>\n                <p><b>Saldo:</b> 4</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Giovanna Rodrigues</p>\n                <p><b>Motivo ou OS:</b> Setor técnico - ultrassom (caixa ) TAMANHO M</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 14:18:48 - INFO - 192.168.88.1:50709 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 14:19:22 - INFO - Client: 192.168.88.84, Method: GET, Path: /test-page, Body: 
+2025-04-10 14:19:22 - INFO - 192.168.88.84:49768 - "GET /test-page HTTP/1.1" 200
+2025-04-10 14:19:22 - INFO - Client: 192.168.88.84, Method: GET, Path: /favicon.ico, Body: 
+2025-04-10 14:19:22 - INFO - 192.168.88.84:49768 - "GET /favicon.ico HTTP/1.1" 404
+2025-04-10 14:19:46 - INFO - Client: 192.168.88.84, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 14:19:46 - INFO - 192.168.88.84:49772 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 14:19:46 - INFO - Client: 192.168.88.84, Method: GET, Path: /LerEst, Body: 
+2025-04-10 14:19:59 - INFO - 192.168.88.84:49775 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 14:21:59 - INFO - Client: 192.168.88.84, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 14:21:59 - INFO - 192.168.88.84:49777 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 14:21:59 - INFO - Client: 192.168.88.84, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> ALCOOL ISOPROPILICO | 99,8% ISOPROPANOL | MC1A0020</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> José Roberto</p>\n                <p><b>Motivo ou OS:</b> Acabou</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 14:21:59 - INFO - 192.168.88.84:49777 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 14:23:25 - INFO - Client: 192.168.88.84, Method: GET, Path: /test-page, Body: 
+2025-04-10 14:23:25 - INFO - 192.168.88.84:49784 - "GET /test-page HTTP/1.1" 200
+2025-04-10 14:39:54 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
+2025-04-10 14:39:54 - INFO - 192.168.88.62:54280 - "OPTIONS /NotaFiscal HTTP/1.1" 200
+2025-04-10 14:39:54 - INFO - Client: 192.168.88.62, Method: POST, Path: /NotaFiscal, Body: {"numNF":"3953"}
+2025-04-10 14:39:56 - INFO - 192.168.88.62:54280 - "POST /NotaFiscal HTTP/1.1" 200
+2025-04-10 16:23:29 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /LerEst, Body: 
+2025-04-10 16:23:29 - INFO - 192.168.88.1:52607 - "OPTIONS /LerEst HTTP/1.1" 200
+2025-04-10 16:23:29 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 16:23:36 - INFO - 192.168.88.1:52607 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 16:24:06 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
+2025-04-10 16:24:06 - INFO - 192.168.88.1:52618 - "OPTIONS /sendmail HTTP/1.1" 200
+2025-04-10 16:24:06 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | SEMI-KRAFT PARDO 200mx60cm | MC1P0022</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Italo</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 16:24:06 - INFO - 192.168.88.1:52618 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 16:24:08 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 16:24:11 - INFO - 192.168.88.1:52618 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 16:24:43 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PLASTICO | FILME STRETCH 500MM ROLO MINIMO 4KG 25 MICRAS TRANSPARENTE | MC1P0020</p>\n                <p><b>Saldo:</b> 16</p>\n                <p><b>Quantidade:</b> 3</p>\n                <p><b>Solicitante:</b> Italo</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 16:24:43 - INFO - 192.168.88.1:52624 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 16:24:45 - INFO - Client: 192.168.88.1, Method: GET, Path: /LerEst, Body: 
+2025-04-10 16:24:50 - INFO - 192.168.88.1:52624 - "GET /LerEst HTTP/1.1" 200
+2025-04-10 16:25:19 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> FITA | ADESIVA TRANSPARENTE 45MMX100M | MC1F0010</p>\n                <p><b>Saldo:</b> 14</p>\n                <p><b>Quantidade:</b> 5</p>\n                <p><b>Solicitante:</b> Italo</p>\n                <p><b>Motivo ou OS:</b> Vicente Martins</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 16:25:19 - INFO - 192.168.88.1:52633 - "POST /sendmail HTTP/1.1" 200
+2025-04-10 16:47:41 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
+2025-04-10 16:47:41 - INFO - 192.168.88.62:55901 - "OPTIONS /NotaFiscal HTTP/1.1" 200
+2025-04-10 16:47:41 - INFO - Client: 192.168.88.62, Method: POST, Path: /NotaFiscal, Body: {"numNF":"3954"}
+2025-04-10 16:47:43 - INFO - 192.168.88.62:55901 - "POST /NotaFiscal HTTP/1.1" 200

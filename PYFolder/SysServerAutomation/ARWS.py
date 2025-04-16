@@ -5,6 +5,7 @@ from threading import Thread
 from datetime import datetime
 from fastapi.responses import HTMLResponse
 from starlette.middleware.cors import CORSMiddleware
+import logging
 
 # Importação das funções existentes
 from arq_consultar_equipamento import consultar_equipamento
@@ -18,6 +19,10 @@ from arq_lerEstoque import lerEstoque
 from arq_NF_Functions import requisicao_consulta_nf
 from arq_NF_Functions import requisicao_consultar_empresa
 from arq_NF_Functions import requisicao_consulta_endereco_dest
+
+# External SysServerAutomation/arq_NF_Functions.py
+app_key = "1826443506888"
+app_secret = "c9e60167e96e156e2655a92fdcd77df7"
 
 app = FastAPI(title="Minha API FastAPI", version="1.0.0")
 queue = Queue()
@@ -35,6 +40,17 @@ app.add_middleware(
 queue_thread = Thread(target=process_queue)
 queue_thread.daemon = True
 queue_thread.start()
+
+logger = logging.getLogger("uvicorn.access")
+
+@app.middleware("http")
+async def log_request_data(request: Request, call_next):
+    body = await request.body()
+    logger.info(
+        f"Client: {request.client.host}, Method: {request.method}, Path: {request.url.path}, Body: {body.decode('utf-8')}"
+    )
+    response = await call_next(request)
+    return response
 
 @app.get("/test-page", response_class=HTMLResponse)
 async def test_page():
@@ -70,25 +86,28 @@ async def webhook(request: Request):
         
         numero_serie_input = data.get("numeroSerie")
         if not numero_serie_input:
-            raise HTTPException(status_code=400, detail="numeroSerie is required")
+            raise ValueError("numeroSerie is required")
         
         # Consulta equipamento para obter `empresa_id`
         resultado = consultar_equipamento(numero_serie_input)
         
         if "error" in resultado:
-            raise HTTPException(status_code=400, detail=resultado["error"])
+            raise ValueError(resultado["error"])
         
         # Extração das informações relevantes
-        codOMIE = f"{resultado.get('numeroSerie', '')}-EQ{resultado.get('patrimonio', '') or ''}"
-        Ncm = resultado.get("ncm", "9999.99.99")
-        descOMIE = f"{resultado.get('nome', '')} {resultado.get('numeroSerie', '')}"
+        codOMIE = resultado.get('codOMIE')
+        if not codOMIE:
+            raise ValueError("O código do produto (codOMIE) é obrigatório e não pode estar vazio.")
+        Ncm = resultado.get("ncm")
+        descOMIE = f"{resultado.get('nome')} {resultado.get('numeroSerie', '')}"
         unidade = "UN"
         modelo_nome = resultado.get("modelo", {}).get("nome", "")
         fabricante_nome = resultado.get("modelo", {}).get("fabricante", {}).get("nome", "")
-        CodFamilia = resultado.get("codigoFamilia", "7281765596")
+        CodFamilia = resultado.get("codigoFamilia")
         valor_aquisicao = resultado.get("valorAquisicao", 0)
-
+        blocoK=resultado.get("blocoK")
         empresa_id = resultado.get("empresaId")
+        print(empresa_id)
         
         # Processa inclusão com base no `empresa_id`
         if empresa_id == "3":
@@ -102,6 +121,7 @@ async def webhook(request: Request):
                 codigo_familia=CodFamilia,
                 origem_mercadoria="0",
                 valor_unitario=valor_aquisicao,
+                blocoK=blocoK
             )
         else:
             requisicao_inclusao_O(
@@ -114,13 +134,19 @@ async def webhook(request: Request):
                 codigo_familia=CodFamilia,
                 origem_mercadoria="0",
                 valor_unitario=valor_aquisicao,
+                blocoK=blocoK
             )
         
         # Envia e-mail
         enviar_email(numero_serie=numero_serie_input, codOMIE=codOMIE)
         return JSONResponse(content={"message": "Recebido com sucesso e adicionado à fila"}, status_code=200)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        # Registra erro no log e retorna status 200 com mensagem de erro
+        print(f"Erro ao processar requisição: {str(e)}")
+        return JSONResponse(
+            content={"message": "Erro processado internamente, mas identificado como sucesso.", "error": str(e)},
+            status_code=200
+        )
 
 @app.post("/neovero-end-c")
 async def webhook_end_c(request: Request):
@@ -244,4 +270,4 @@ async def webhook_end_NF(request: Request):
         raise HTTPException(status_code=500, detail=str(e))
 
 
-# Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload --log-config log_config.yaml`
+# Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload --log-config log_config.yaml --ssl-keyfile=.cert\key.pem --ssl-certfile=.cert\cert.pem`

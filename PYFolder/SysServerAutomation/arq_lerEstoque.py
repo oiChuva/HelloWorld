@@ -14,7 +14,7 @@ def lerEstoque(data_posicao):
         7281751216: "INSTRUMENTO DE MEDIÇÃO"
     }
     
-    organizados_por_estoque = {codigo: [] for codigo in estoques}
+    todas_respostas = []
 
     for codigo_local_estoque, nome_estoque in estoques.items():
         for pagina in range(1, 4):  # Limite de 3 páginas
@@ -39,20 +39,7 @@ def lerEstoque(data_posicao):
             if response.status_code == 200:
                 result = response.json()
                 if 'produtos' in result:
-                    # Adicionar produtos com nSaldo > 0 ao estoque correspondente
-                    organizados_por_estoque[codigo_local_estoque].extend(
-                        [produto for produto in result['produtos'] if produto.get('nSaldo', 0) > 0]
-                    )
+                    todas_respostas.extend(result['produtos'])
 
-    # Organizar a resposta JSON final
-    resposta_organizada = {
-        "estoques": [
-            {
-                "nome_estoque": nome_estoque,
-                "produtos": organizados_por_estoque[codigo_local_estoque]
-            } for codigo_local_estoque, nome_estoque in estoques.items()
-        ]
-    }
-
-    return resposta_organizada
-
+    # Retornar todos os dados consolidados como JSON
+    return todas_respostas
