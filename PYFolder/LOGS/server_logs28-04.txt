@@ -330,7 +330,7 @@ asyncio.exceptions.CancelledError
 2025-04-10 08:35:46 - INFO - 192.168.88.73:50891 - "GET /LerEst HTTP/1.1" 200
 2025-04-10 08:36:18 - INFO - Client: 192.168.88.73, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-10 08:36:18 - INFO - 192.168.88.73:50935 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-10 08:36:18 - INFO - Client: 192.168.88.73, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUMINARIA LED | SOB LINEAR SLIM 36W 6500O B | MC1L0016</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Diane Ferreira</p>\n                <p><b>Motivo ou OS:</b> ManutenÁ„o Predial</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 08:36:18 - INFO - Client: 192.168.88.73, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUMINARIA LED | SOB LINEAR SLIM 36W 6500O B | MC1L0016</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Diane Ferreira</p>\n                <p><b>Motivo ou OS:</b> Manuten√ß√£o Predial</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
 2025-04-10 08:36:18 - INFO - 192.168.88.73:50935 - "POST /sendmail HTTP/1.1" 200
 2025-04-10 08:38:45 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
 2025-04-10 08:38:45 - INFO - 192.168.88.1:50376 - "GET /test-page HTTP/1.1" 200
@@ -381,7 +381,7 @@ asyncio.exceptions.CancelledError
 2025-04-10 08:59:49 - INFO - 192.168.88.201:58440 - "GET /LerEst HTTP/1.1" 200
 2025-04-10 09:01:39 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-10 09:01:39 - INFO - 192.168.88.201:58522 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-10 09:01:39 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> TONER | BROTHER LASER TN2370/TN660 | MC1T0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 09:01:39 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> TONER | BROTHER LASER TN2370/TN660 | MC1T0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
 2025-04-10 09:01:39 - INFO - 192.168.88.201:58522 - "POST /sendmail HTTP/1.1" 200
 2025-04-10 09:41:27 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-10 09:41:27 - INFO - 192.168.88.201:59707 - "OPTIONS /LerEst HTTP/1.1" 200
@@ -415,7 +415,7 @@ asyncio.exceptions.CancelledError
 2025-04-10 11:00:40 - INFO - 192.168.88.201:50689 - "GET /LerEst HTTP/1.1" 200
 2025-04-10 11:13:36 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-10 11:13:36 - INFO - 192.168.88.201:50995 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-10 11:13:36 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> SULFITE | 75g PACOTE 500 FOLHAS DE PAPEL | MC1S0012</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 11:13:36 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> SULFITE | 75g PACOTE 500 FOLHAS DE PAPEL | MC1S0012</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
 2025-04-10 11:13:36 - INFO - 192.168.88.201:50995 - "POST /sendmail HTTP/1.1" 200
 2025-04-10 11:13:42 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-10 11:13:42 - INFO - 192.168.88.201:51014 - "OPTIONS /LerEst HTTP/1.1" 200
@@ -449,7 +449,7 @@ asyncio.exceptions.CancelledError
 2025-04-10 14:14:58 - INFO - 192.168.88.201:53364 - "GET /favicon.ico HTTP/1.1" 404
 2025-04-10 14:18:48 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-10 14:18:48 - INFO - 192.168.88.1:50709 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-10 14:18:48 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUVA PARA PROCEDIMENTO NAO CIRURGICO | NITRILICA AZUL SEM PO TAMANHO XG C/100UN | MC1L0008</p>\n                <p><b>Saldo:</b> 4</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Giovanna Rodrigues</p>\n                <p><b>Motivo ou OS:</b> Setor tÈcnico - ultrassom (caixa ) TAMANHO M</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 14:18:48 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUVA PARA PROCEDIMENTO NAO CIRURGICO | NITRILICA AZUL SEM PO TAMANHO XG C/100UN | MC1L0008</p>\n                <p><b>Saldo:</b> 4</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Giovanna Rodrigues</p>\n                <p><b>Motivo ou OS:</b> Setor t√©cnico - ultrassom (caixa ) TAMANHO M</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
 2025-04-10 14:18:48 - INFO - 192.168.88.1:50709 - "POST /sendmail HTTP/1.1" 200
 2025-04-10 14:19:22 - INFO - Client: 192.168.88.84, Method: GET, Path: /test-page, Body: 
 2025-04-10 14:19:22 - INFO - 192.168.88.84:49768 - "GET /test-page HTTP/1.1" 200
@@ -461,7 +461,7 @@ asyncio.exceptions.CancelledError
 2025-04-10 14:19:59 - INFO - 192.168.88.84:49775 - "GET /LerEst HTTP/1.1" 200
 2025-04-10 14:21:59 - INFO - Client: 192.168.88.84, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-10 14:21:59 - INFO - 192.168.88.84:49777 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-10 14:21:59 - INFO - Client: 192.168.88.84, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> ALCOOL ISOPROPILICO | 99,8% ISOPROPANOL | MC1A0020</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> JosÈ Roberto</p>\n                <p><b>Motivo ou OS:</b> Acabou</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
+2025-04-10 14:21:59 - INFO - Client: 192.168.88.84, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> ALCOOL ISOPROPILICO | 99,8% ISOPROPANOL | MC1A0020</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Jos√© Roberto</p>\n                <p><b>Motivo ou OS:</b> Acabou</p>\n                <p><b>Data:</b> 2025-04-10</p>\n            "}
 2025-04-10 14:21:59 - INFO - 192.168.88.84:49777 - "POST /sendmail HTTP/1.1" 200
 2025-04-10 14:23:25 - INFO - Client: 192.168.88.84, Method: GET, Path: /test-page, Body: 
 2025-04-10 14:23:25 - INFO - 192.168.88.84:49784 - "GET /test-page HTTP/1.1" 200
@@ -548,7 +548,7 @@ asyncio.exceptions.CancelledError
 2025-04-11 14:16:00 - INFO - 192.168.88.73:56414 - "GET /LerEst HTTP/1.1" 200
 2025-04-11 14:16:18 - INFO - Client: 192.168.88.73, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-11 14:16:18 - INFO - 192.168.88.73:56423 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-11 14:16:18 - INFO - Client: 192.168.88.73, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUMINARIA LED | SOB LINEAR SLIM 36W 6500O B | MC1L0016</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Diane Ferreira</p>\n                <p><b>Motivo ou OS:</b> ManutenÁ„o Predial</p>\n                <p><b>Data:</b> 2025-04-11</p>\n            "}
+2025-04-11 14:16:18 - INFO - Client: 192.168.88.73, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUMINARIA LED | SOB LINEAR SLIM 36W 6500O B | MC1L0016</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Diane Ferreira</p>\n                <p><b>Motivo ou OS:</b> Manuten√ß√£o Predial</p>\n                <p><b>Data:</b> 2025-04-11</p>\n            "}
 2025-04-11 14:16:18 - INFO - 192.168.88.73:56423 - "POST /sendmail HTTP/1.1" 200
 2025-04-11 15:48:12 - INFO - Client: 192.168.88.181, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-11 15:48:12 - INFO - 192.168.88.181:50039 - "OPTIONS /LerEst HTTP/1.1" 200
@@ -568,7 +568,7 @@ asyncio.exceptions.CancelledError
 2025-04-11 15:53:05 - INFO - 192.168.88.201:57975 - "GET /LerEst HTTP/1.1" 200
 2025-04-11 15:53:42 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-11 15:53:42 - INFO - 192.168.88.201:57982 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-11 15:53:42 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESENGRIPANTE | SPRAY 300ML | MC1D0004</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> DOUGLAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-11</p>\n            "}
+2025-04-11 15:53:42 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESENGRIPANTE | SPRAY 300ML | MC1D0004</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> DOUGLAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-11</p>\n            "}
 2025-04-11 15:53:42 - INFO - 192.168.88.201:57982 - "POST /sendmail HTTP/1.1" 200
 2025-04-11 16:27:04 - INFO - Client: 192.168.88.73, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-11 16:27:04 - INFO - 192.168.88.73:60578 - "OPTIONS /LerEst HTTP/1.1" 200
@@ -598,13 +598,13 @@ asyncio.exceptions.CancelledError
 2025-04-14 08:23:22 - INFO - Application startup complete.
 2025-04-14 08:25:37 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-14 08:25:37 - INFO - 192.168.88.201:50555 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-14 08:25:37 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESENGRIPANTE | SPRAY 300ML | MC1D0004</p>\n                <p><b>Saldo:</b> 7</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 08:25:37 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESENGRIPANTE | SPRAY 300ML | MC1D0004</p>\n                <p><b>Saldo:</b> 7</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 08:25:37 - INFO - 192.168.88.201:50557 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 08:25:42 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-14 08:25:42 - INFO - 192.168.88.201:50555 - "OPTIONS /LerEst HTTP/1.1" 200
 2025-04-14 08:25:42 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
 2025-04-14 08:25:47 - INFO - 192.168.88.201:50557 - "GET /LerEst HTTP/1.1" 200
-2025-04-14 08:26:10 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPA CONTATO | SPRAY 300ML | MC1L0005</p>\n                <p><b>Saldo:</b> 22</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 08:26:10 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPA CONTATO | SPRAY 300ML | MC1L0005</p>\n                <p><b>Saldo:</b> 22</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 08:26:10 - INFO - 192.168.88.201:50561 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 08:26:11 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
 2025-04-14 08:26:14 - INFO - 192.168.88.201:50561 - "GET /LerEst HTTP/1.1" 200
@@ -618,21 +618,21 @@ asyncio.exceptions.CancelledError
 2025-04-14 08:26:56 - INFO - 192.168.88.1:53273 - "GET /LerEst HTTP/1.1" 200
 2025-04-14 08:27:49 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-14 08:27:49 - INFO - 192.168.88.1:53279 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-14 08:27:49 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> FUSIVEL CERAMICA 250V 10A 5X20 | CP1F0025</p>\n                <p><b>Saldo:</b> 1</p>\n                <p><b>Quantidade:</b> 4</p>\n                <p><b>Solicitante:</b> Danilo</p>\n                <p><b>Motivo ou OS:</b> extens„o bancada</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 08:27:49 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> FUSIVEL CERAMICA 250V 10A 5X20 | CP1F0025</p>\n                <p><b>Saldo:</b> 1</p>\n                <p><b>Quantidade:</b> 4</p>\n                <p><b>Solicitante:</b> Danilo</p>\n                <p><b>Motivo ou OS:</b> extens√£o bancada</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 08:27:50 - INFO - 192.168.88.1:53279 - "POST /sendmail HTTP/1.1" 200
-2025-04-14 08:28:41 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUVA PARA PROCEDIMENTO NAO CIRURGICO | NITRILICA AZUL SEM PO TAMANHO XG C/100UN | MC1L0008</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 08:28:41 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUVA PARA PROCEDIMENTO NAO CIRURGICO | NITRILICA AZUL SEM PO TAMANHO XG C/100UN | MC1L0008</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 08:28:42 - INFO - 192.168.88.201:50573 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 08:28:43 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
 2025-04-14 08:28:48 - INFO - 192.168.88.201:50573 - "GET /LerEst HTTP/1.1" 200
 2025-04-14 09:02:30 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-14 09:02:30 - INFO - 192.168.88.201:51591 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-14 09:02:30 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PANO MULTIUSO | (PERFLEX) 600 FOLHAS 28x40cm | MC1P0015</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 09:02:30 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PANO MULTIUSO | (PERFLEX) 600 FOLHAS 28x40cm | MC1P0015</p>\n                <p><b>Saldo:</b> 11</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 09:02:30 - INFO - 192.168.88.201:51591 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 09:02:32 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-14 09:02:32 - INFO - 192.168.88.201:51591 - "OPTIONS /LerEst HTTP/1.1" 200
 2025-04-14 09:02:32 - INFO - Client: 192.168.88.201, Method: GET, Path: /LerEst, Body: 
 2025-04-14 09:02:45 - INFO - 192.168.88.201:51591 - "GET /LerEst HTTP/1.1" 200
-2025-04-14 09:03:10 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> GRAXA | SPRAY MULTIUSO 300ml | MC1G0001</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 09:03:10 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> GRAXA | SPRAY MULTIUSO 300ml | MC1G0001</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 09:03:10 - INFO - 192.168.88.201:51605 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 09:03:59 - INFO - Client: 192.168.88.62, Method: GET, Path: /test-page, Body: 
 2025-04-14 09:03:59 - INFO - 192.168.88.62:61370 - "GET /test-page HTTP/1.1" 200
@@ -646,7 +646,7 @@ asyncio.exceptions.CancelledError
 2025-04-14 09:12:30 - INFO - 192.168.88.201:51934 - "GET /LerEst HTTP/1.1" 200
 2025-04-14 09:13:18 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-14 09:13:18 - INFO - 192.168.88.201:51952 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-14 09:13:18 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> BATERIA | LR44 AG13 LR1154 1,5V | MC1B0003</p>\n                <p><b>Saldo:</b> 38</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 09:13:18 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> BATERIA | LR44 AG13 LR1154 1,5V | MC1B0003</p>\n                <p><b>Saldo:</b> 38</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 09:13:18 - INFO - 192.168.88.201:51952 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 10:26:13 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
 2025-04-14 10:26:13 - INFO - 192.168.88.201:60573 - "OPTIONS /LerEst HTTP/1.1" 200
@@ -668,7 +668,7 @@ asyncio.exceptions.CancelledError
 2025-04-14 14:05:20 - INFO - 192.168.88.171:56878 - "GET /LerEst HTTP/1.1" 200
 2025-04-14 14:06:34 - INFO - Client: 192.168.88.171, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-14 14:06:34 - INFO - 192.168.88.171:56944 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-14 14:06:34 - INFO - Client: 192.168.88.171, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> NOTEBOOK | I5 11™GERACAO 14/15&quot; WINDOWS 11 PRO 8GB RAM 256GB SDD COM SAIDA HDMI | MC1N0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Isaque Santos Fagundes</p>\n                <p><b>Motivo ou OS:</b> Para novo colaborador.</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
+2025-04-14 14:06:34 - INFO - Client: 192.168.88.171, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> NOTEBOOK | I5 11¬™GERACAO 14/15&quot; WINDOWS 11 PRO 8GB RAM 256GB SDD COM SAIDA HDMI | MC1N0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Isaque Santos Fagundes</p>\n                <p><b>Motivo ou OS:</b> Para novo colaborador.</p>\n                <p><b>Data:</b> 2025-04-14</p>\n            "}
 2025-04-14 14:06:34 - INFO - 192.168.88.171:56944 - "POST /sendmail HTTP/1.1" 200
 2025-04-14 14:11:59 - INFO - Client: 192.168.88.171, Method: GET, Path: /LerEst, Body: 
 2025-04-15 08:28:25 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /LerEst, Body: 
@@ -677,7 +677,7 @@ asyncio.exceptions.CancelledError
 2025-04-15 08:28:32 - INFO - 192.168.88.201:50257 - "GET /LerEst HTTP/1.1" 200
 2025-04-15 08:29:30 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-15 08:29:30 - INFO - 192.168.88.201:50262 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-15 08:29:30 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> BATERIA | LITIO CR2032 3V | MC1B0004</p>\n                <p><b>Saldo:</b> 17</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> jo„o</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O</p>\n                <p><b>Data:</b> 2025-04-15</p>\n            "}
+2025-04-15 08:29:30 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> BATERIA | LITIO CR2032 3V | MC1B0004</p>\n                <p><b>Saldo:</b> 17</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> jo√£o</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO</p>\n                <p><b>Data:</b> 2025-04-15</p>\n            "}
 2025-04-15 08:29:30 - INFO - 192.168.88.201:50262 - "POST /sendmail HTTP/1.1" 200
 2025-04-15 08:40:53 - INFO - Shutting down
 2025-04-15 08:40:53 - INFO - Waiting for application shutdown.
@@ -746,7 +746,7 @@ asyncio.exceptions.CancelledError
 2025-04-15 14:11:39 - INFO - 192.168.88.181:55585 - "GET /LerEst HTTP/1.1" 200
 2025-04-15 14:12:19 - INFO - Client: 192.168.88.181, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-15 14:12:19 - INFO - 192.168.88.181:55601 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-15 14:12:19 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> OCULOS | DE SEGURANCA | MC1O0001</p>\n                <p><b>Saldo:</b> 9</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna - Diane</p>\n                <p><b>Motivo ou OS:</b> N„o sei ass:Dyovanna</p>\n                <p><b>Data:</b> 2025-04-15</p>\n            "}
+2025-04-15 14:12:19 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> OCULOS | DE SEGURANCA | MC1O0001</p>\n                <p><b>Saldo:</b> 9</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna - Diane</p>\n                <p><b>Motivo ou OS:</b> N√£o sei ass:Dyovanna</p>\n                <p><b>Data:</b> 2025-04-15</p>\n            "}
 2025-04-15 14:12:19 - INFO - 192.168.88.181:55601 - "POST /sendmail HTTP/1.1" 200
 2025-04-15 15:28:10 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
 2025-04-15 15:28:10 - INFO - 192.168.88.62:63926 - "OPTIONS /NotaFiscal HTTP/1.1" 200
@@ -842,7 +842,7 @@ asyncio.exceptions.CancelledError
 2025-04-17 10:53:27 - INFO - 192.168.88.201:62344 - "GET /LerEst HTTP/1.1" 200
 2025-04-17 10:59:26 - INFO - Client: 192.168.88.201, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-17 10:59:26 - INFO - 192.168.88.201:62574 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-17 10:59:26 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> COLA BASTAO | MC1C0061</p>\n                <p><b>Saldo:</b> 14</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI«√O RDV</p>\n                <p><b>Data:</b> 2025-04-17</p>\n            "}
+2025-04-17 10:59:26 - INFO - Client: 192.168.88.201, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> COLA BASTAO | MC1C0061</p>\n                <p><b>Saldo:</b> 14</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> LUCAS</p>\n                <p><b>Motivo ou OS:</b> REPOSI√á√ÉO RDV</p>\n                <p><b>Data:</b> 2025-04-17</p>\n            "}
 2025-04-17 10:59:26 - INFO - 192.168.88.201:62574 - "POST /sendmail HTTP/1.1" 200
 2025-04-17 12:25:05 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
 2025-04-17 12:25:05 - INFO - 192.168.88.62:56519 - "OPTIONS /NotaFiscal HTTP/1.1" 200
@@ -902,7 +902,7 @@ asyncio.exceptions.CancelledError
 2025-04-17 15:37:31 - INFO - 192.168.88.171:64993 - "GET /LerEst HTTP/1.1" 200
 2025-04-17 15:38:15 - INFO - Client: 192.168.88.171, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-17 15:38:15 - INFO - 192.168.88.171:64995 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-17 15:38:15 - INFO - Client: 192.168.88.171, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> TONER | BROTHER LASER TN450 | MC1T0003</p>\n                <p><b>Saldo:</b> 1</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Isaque Santos Fagundes</p>\n                <p><b>Motivo ou OS:</b> 35 | 17/04/2025 15:02:14  Nome: Renan | Empresa: VICENTE MARTINS | Setor: RH  SolicitaÁ„o: Meu gestor solicitou a troca do tonner da impressora da Vicente Martins! | Qualidade da impress„o esta muito ruim.</p>\n                <p><b>Data:</b> 2025-04-17</p>\n            "}
+2025-04-17 15:38:15 - INFO - Client: 192.168.88.171, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> TONER | BROTHER LASER TN450 | MC1T0003</p>\n                <p><b>Saldo:</b> 1</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Isaque Santos Fagundes</p>\n                <p><b>Motivo ou OS:</b> 35 | 17/04/2025 15:02:14  Nome: Renan | Empresa: VICENTE MARTINS | Setor: RH  Solicita√ß√£o: Meu gestor solicitou a troca do tonner da impressora da Vicente Martins! | Qualidade da impress√£o esta muito ruim.</p>\n                <p><b>Data:</b> 2025-04-17</p>\n            "}
 2025-04-17 15:38:16 - INFO - 192.168.88.171:64995 - "POST /sendmail HTTP/1.1" 200
 2025-04-22 08:01:55 - INFO - Client: 192.168.88.1, Method: GET, Path: /test-page, Body: 
 2025-04-22 08:01:55 - INFO - 192.168.88.1:31911 - "GET /test-page HTTP/1.1" 200
@@ -1021,7 +1021,7 @@ asyncio.exceptions.CancelledError
 2025-04-22 14:48:38 - INFO - 192.168.88.1:4425 - "GET /LerEst HTTP/1.1" 200
 2025-04-22 14:49:02 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-22 14:49:02 - INFO - 192.168.88.1:5060 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-22 14:49:02 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PASTA | DE ARQUIVO MORTO 350MM x 13MM x 250MM | MC1P0076</p>\n                <p><b>Saldo:</b> 15</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Din·</p>\n                <p><b>Motivo ou OS:</b> PARA ARQUIVO MORTO</p>\n                <p><b>Data:</b> 2025-04-22</p>\n            "}
+2025-04-22 14:49:02 - INFO - Client: 192.168.88.1, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PASTA | DE ARQUIVO MORTO 350MM x 13MM x 250MM | MC1P0076</p>\n                <p><b>Saldo:</b> 15</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Din√°</p>\n                <p><b>Motivo ou OS:</b> PARA ARQUIVO MORTO</p>\n                <p><b>Data:</b> 2025-04-22</p>\n            "}
 2025-04-22 14:49:02 - INFO - 192.168.88.1:5060 - "POST /sendmail HTTP/1.1" 200
 2025-04-22 14:59:51 - INFO - Client: 192.168.88.73, Method: GET, Path: /test-page, Body: 
 2025-04-22 14:59:51 - INFO - 192.168.88.73:58161 - "GET /test-page HTTP/1.1" 200
@@ -1041,7 +1041,7 @@ asyncio.exceptions.CancelledError
 2025-04-22 15:04:30 - INFO - 192.168.88.181:64715 - "GET /LerEst HTTP/1.1" 200
 2025-04-22 15:05:02 - INFO - Client: 192.168.88.181, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-22 15:05:02 - INFO - 192.168.88.181:64727 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-22 15:05:02 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> NOTEBOOK | I5 11™GERACAO 14/15&quot; WINDOWS 11 PRO 8GB RAM 256GB SDD COM SAIDA HDMI | MC1N0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Entregar para o isaque configurar para colaboradora nova</p>\n                <p><b>Data:</b> 2025-04-22</p>\n            "}
+2025-04-22 15:05:02 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> NOTEBOOK | I5 11¬™GERACAO 14/15&quot; WINDOWS 11 PRO 8GB RAM 256GB SDD COM SAIDA HDMI | MC1N0002</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Entregar para o isaque configurar para colaboradora nova</p>\n                <p><b>Data:</b> 2025-04-22</p>\n            "}
 2025-04-22 15:05:02 - INFO - 192.168.88.181:64729 - "POST /sendmail HTTP/1.1" 200
 2025-04-22 15:05:05 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-22 15:05:09 - INFO - 192.168.88.181:64729 - "GET /LerEst HTTP/1.1" 200
@@ -1173,31 +1173,31 @@ asyncio.exceptions.CancelledError
 2025-04-23 16:23:39 - INFO - 192.168.88.181:63019 - "GET /LerEst HTTP/1.1" 200
 2025-04-23 16:23:56 - INFO - Client: 192.168.88.181, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-23 16:23:56 - INFO - 192.168.88.181:63031 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-23 16:23:56 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | HIGIENICO 1 ROLO c/ 300mx10cm | MC1P0004</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 8</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:23:56 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | HIGIENICO 1 ROLO c/ 300mx10cm | MC1P0004</p>\n                <p><b>Saldo:</b> 10</p>\n                <p><b>Quantidade:</b> 8</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:23:56 - INFO - 192.168.88.181:63033 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:24:03 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:24:06 - INFO - 192.168.88.181:63039 - "GET /LerEst HTTP/1.1" 200
-2025-04-23 16:24:18 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> AGUA SANITARIA | 5L | MC1A0002</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:24:18 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> AGUA SANITARIA | 5L | MC1A0002</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:24:18 - INFO - 192.168.88.181:63044 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:24:24 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:24:29 - INFO - 192.168.88.181:63048 - "GET /LerEst HTTP/1.1" 200
-2025-04-23 16:24:46 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | TOALHA INTERFOLHA PCT C/1000FOLHAS 20x20cm | MC1P0005</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:24:46 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | TOALHA INTERFOLHA PCT C/1000FOLHAS 20x20cm | MC1P0005</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:24:46 - INFO - 192.168.88.181:63051 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:24:52 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:24:57 - INFO - 192.168.88.181:63055 - "GET /LerEst HTTP/1.1" 200
-2025-04-23 16:25:10 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESINFETANTE 5L | MC1D0006</p>\n                <p><b>Saldo:</b> 4</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:25:10 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> DESINFETANTE 5L | MC1D0006</p>\n                <p><b>Saldo:</b> 4</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:25:10 - INFO - 192.168.88.181:63057 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:25:16 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:25:20 - INFO - 192.168.88.181:63063 - "GET /LerEst HTTP/1.1" 200
-2025-04-23 16:25:46 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPA VIDROS | FRASCO 500ML | MC1L0002</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:25:46 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPA VIDROS | FRASCO 500ML | MC1L0002</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:25:46 - INFO - 192.168.88.181:63067 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:25:55 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:26:01 - INFO - 192.168.88.181:63074 - "GET /LerEst HTTP/1.1" 200
-2025-04-23 16:26:20 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPADOR | DESENGORDURANTE FRASCO C/ 500ML | MC1D0001</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:26:20 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPADOR | DESENGORDURANTE FRASCO C/ 500ML | MC1D0001</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:26:20 - INFO - 192.168.88.181:63078 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:26:26 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:26:29 - INFO - 192.168.88.181:63084 - "GET /LerEst HTTP/1.1" 200
-2025-04-23 16:26:55 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUSTRA MOVEIS | FRASCO 200ML | MC1L0001</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
+2025-04-23 16:26:55 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LUSTRA MOVEIS | FRASCO 200ML | MC1L0001</p>\n                <p><b>Saldo:</b> 2</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-23</p>\n            "}
 2025-04-23 16:26:56 - INFO - 192.168.88.181:63087 - "POST /sendmail HTTP/1.1" 200
 2025-04-23 16:26:58 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-23 16:27:05 - INFO - 192.168.88.181:63087 - "GET /LerEst HTTP/1.1" 200
@@ -1211,19 +1211,19 @@ asyncio.exceptions.CancelledError
 2025-04-24 10:12:58 - INFO - 192.168.88.181:53109 - "GET /LerEst HTTP/1.1" 200
 2025-04-24 10:13:17 - INFO - Client: 192.168.88.181, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-24 10:13:17 - INFO - 192.168.88.181:53123 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-24 10:13:17 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | TOALHA INTERFOLHA PCT C/1000FOLHAS 20x20cm | MC1P0005</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
+2025-04-24 10:13:17 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | TOALHA INTERFOLHA PCT C/1000FOLHAS 20x20cm | MC1P0005</p>\n                <p><b>Saldo:</b> 8</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
 2025-04-24 10:13:17 - INFO - 192.168.88.181:53125 - "POST /sendmail HTTP/1.1" 200
 2025-04-24 10:13:22 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-24 10:13:26 - INFO - 192.168.88.181:53131 - "GET /LerEst HTTP/1.1" 200
-2025-04-24 10:13:39 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | HIGIENICO 1 ROLO c/ 300mx10cm | MC1P0004</p>\n                <p><b>Saldo:</b> 18</p>\n                <p><b>Quantidade:</b> 8</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
+2025-04-24 10:13:39 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> PAPEL | HIGIENICO 1 ROLO c/ 300mx10cm | MC1P0004</p>\n                <p><b>Saldo:</b> 18</p>\n                <p><b>Quantidade:</b> 8</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
 2025-04-24 10:13:39 - INFO - 192.168.88.181:53138 - "POST /sendmail HTTP/1.1" 200
 2025-04-24 10:13:46 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-24 10:13:50 - INFO - 192.168.88.181:53144 - "GET /LerEst HTTP/1.1" 200
-2025-04-24 10:14:08 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPA VIDROS | FRASCO 500ML | MC1L0002</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
+2025-04-24 10:14:08 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPA VIDROS | FRASCO 500ML | MC1L0002</p>\n                <p><b>Saldo:</b> 5</p>\n                <p><b>Quantidade:</b> 1</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
 2025-04-24 10:14:08 - INFO - 192.168.88.181:53147 - "POST /sendmail HTTP/1.1" 200
 2025-04-24 10:14:10 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-24 10:14:15 - INFO - 192.168.88.181:53147 - "GET /LerEst HTTP/1.1" 200
-2025-04-24 10:15:17 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPADOR | DESENGORDURANTE FRASCO C/ 500ML | MC1D0001</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
+2025-04-24 10:15:17 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> LIMPADOR | DESENGORDURANTE FRASCO C/ 500ML | MC1D0001</p>\n                <p><b>Saldo:</b> 3</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Vicente</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
 2025-04-24 10:15:17 - INFO - 192.168.88.181:53186 - "POST /sendmail HTTP/1.1" 200
 2025-04-24 10:15:30 - INFO - Client: 192.168.88.62, Method: OPTIONS, Path: /NotaFiscal, Body: 
 2025-04-24 10:15:30 - INFO - 192.168.88.62:60919 - "OPTIONS /NotaFiscal HTTP/1.1" 200
@@ -1235,7 +1235,7 @@ asyncio.exceptions.CancelledError
 2025-04-24 14:02:42 - INFO - 192.168.88.234:55441 - "GET /LerEst HTTP/1.1" 200
 2025-04-24 14:03:32 - INFO - Client: 192.168.88.234, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-24 14:03:32 - INFO - 192.168.88.234:55511 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-24 14:03:32 - INFO - Client: 192.168.88.234, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> GEL CONDUTOR PARA ULTRASSOM E CORRENTES | INCOLOR (CARBOGEL) 250G | MC1G0010</p>\n                <p><b>Saldo:</b> 42</p>\n                <p><b>Quantidade:</b> 4</p>\n                <p><b>Solicitante:</b> LetÌcia Maria</p>\n                <p><b>Motivo ou OS:</b> Para levar para a JPR</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
+2025-04-24 14:03:32 - INFO - Client: 192.168.88.234, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> GEL CONDUTOR PARA ULTRASSOM E CORRENTES | INCOLOR (CARBOGEL) 250G | MC1G0010</p>\n                <p><b>Saldo:</b> 42</p>\n                <p><b>Quantidade:</b> 4</p>\n                <p><b>Solicitante:</b> Let√≠cia Maria</p>\n                <p><b>Motivo ou OS:</b> Para levar para a JPR</p>\n                <p><b>Data:</b> 2025-04-24</p>\n            "}
 2025-04-24 14:03:32 - INFO - 192.168.88.234:55511 - "POST /sendmail HTTP/1.1" 200
 2025-04-24 14:33:26 - INFO - Client: 192.168.88.234, Method: GET, Path: /test-page, Body: 
 2025-04-24 14:33:26 - INFO - 192.168.88.234:56233 - "GET /test-page HTTP/1.1" 200
@@ -1323,11 +1323,11 @@ asyncio.exceptions.CancelledError
 2025-04-28 08:07:01 - INFO - 192.168.88.181:52849 - "GET /LerEst HTTP/1.1" 200
 2025-04-28 08:07:13 - INFO - Client: 192.168.88.181, Method: OPTIONS, Path: /sendmail, Body: 
 2025-04-28 08:07:13 - INFO - 192.168.88.181:52875 - "OPTIONS /sendmail HTTP/1.1" 200
-2025-04-28 08:07:13 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> CAFE | 500G | MC1C0003</p>\n                <p><b>Saldo:</b> 6</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-28</p>\n            "}
+2025-04-28 08:07:13 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> CAFE | 500G | MC1C0003</p>\n                <p><b>Saldo:</b> 6</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-28</p>\n            "}
 2025-04-28 08:07:13 - INFO - 192.168.88.181:52877 - "POST /sendmail HTTP/1.1" 200
 2025-04-28 08:07:17 - INFO - Client: 192.168.88.181, Method: GET, Path: /LerEst, Body: 
 2025-04-28 08:07:20 - INFO - 192.168.88.181:52888 - "GET /LerEst HTTP/1.1" 200
-2025-04-28 08:07:38 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> ACUCAR | 1KG | MC1A0004</p>\n                <p><b>Saldo:</b> 13</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> ReposiÁ„o Opus</p>\n                <p><b>Data:</b> 2025-04-28</p>\n            "}
+2025-04-28 08:07:38 - INFO - Client: 192.168.88.181, Method: POST, Path: /sendmail, Body: {"ht_mail":"\n                <p><b>Item selecionado:</b> ACUCAR | 1KG | MC1A0004</p>\n                <p><b>Saldo:</b> 13</p>\n                <p><b>Quantidade:</b> 2</p>\n                <p><b>Solicitante:</b> Dyovanna</p>\n                <p><b>Motivo ou OS:</b> Reposi√ß√£o Opus</p>\n                <p><b>Data:</b> 2025-04-28</p>\n            "}
 2025-04-28 08:07:38 - INFO - 192.168.88.181:52897 - "POST /sendmail HTTP/1.1" 200
 2025-04-28 08:14:35 - INFO - Client: 192.168.88.1, Method: OPTIONS, Path: /neovero-receiver, Body: 
 2025-04-28 08:14:35 - INFO - 192.168.88.1:41867 - "OPTIONS /neovero-receiver HTTP/1.1" 200
@@ -1341,7 +1341,3 @@ asyncio.exceptions.CancelledError
 2025-04-28 08:51:32 - INFO - 192.168.88.1:1503 - "OPTIONS /neovero-receiver HTTP/1.1" 200
 2025-04-28 08:51:32 - INFO - Client: 192.168.88.1, Method: POST, Path: /neovero-receiver, Body: {"numeroSerie":"567291WX0"}
 2025-04-28 08:51:35 - INFO - 192.168.88.1:1503 - "POST /neovero-receiver HTTP/1.1" 200
-2025-04-28 08:56:17 - INFO - Shutting down
-2025-04-28 08:56:18 - INFO - Waiting for application shutdown.
-2025-04-28 08:56:18 - INFO - Application shutdown complete.
-2025-04-28 08:56:18 - INFO - Finished server process [5676]
