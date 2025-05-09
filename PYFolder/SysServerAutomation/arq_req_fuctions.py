@@ -51,51 +51,42 @@ def incluir_requisicao_compra(codIntReqCompra, codProj, dtSugestao, obsIntReqCom
     print("Response Body:", response.json())
     return response
 
-def listar_todos_produtos():
+def consultar_produto(codItem):
     """
-    Função para listar todos os produtos da API Omie, percorrendo todas as páginas.
+    Função para consultar um produto específico na API Omie com base no código do produto.
+    Retorna o codProd do produto consultado.
     """
     url = "https://app.omie.com.br/api/v1/geral/produtos/"
     headers = {
         "Content-type": "application/json"
     }
-    
-    pagina_atual = 1
-    registros_por_pagina = 500
-    todos_produtos = []
 
-    while True:
-        # Define o payload para a página atual
-        payload = {
-            "call": "ListarProdutos",
-            "param": [
-                {
-                    "pagina": pagina_atual,
-                    "registros_por_pagina": registros_por_pagina,
-                    "apenas_importado_api": "N",
-                    "filtrar_apenas_omiepdv": "N"
-                }
-            ],
-            "app_key": "1826443506888",  # Inclui app_key diretamente no JSON
-            "app_secret": "c9e60167e96e156e2655a92fdcd77df7"  # Inclui app_secret diretamente no JSON
-        }
+    # Define o payload com o código do produto
+    payload = {
+        "call": "ConsultarProduto",
+        "param": [
+            {
+                "codigo": codItem
+            }
+        ],
+        "app_key": "1826443506888",  # Inclui app_key diretamente no JSON
+        "app_secret": "c9e60167e96e156e2655a92fdcd77df7"  # Inclui app_secret diretamente no JSON
+    }
 
-        # Faz a requisição POST
-        response = requests.post(url, headers=headers, data=json.dumps(payload))
-        if response.status_code != 200:
-            print(f"[ERROR] Falha na requisição. Status Code: {response.status_code}")
-            print(f"Response Body: {response.text}")
-            break
+    # Faz a requisição POST
+    response = requests.post(url, headers=headers, data=json.dumps(payload))
+    if response.status_code != 200:
+        print(f"[ERROR] Falha na requisição. Status Code: {response.status_code}")
+        print(f"Response Body: {response.text}")
+        return None
 
-        # Processa a resposta
-        resposta_json = response.json()
-        todos_produtos.extend(resposta_json.get("produtos", []))  # Adiciona os produtos da página atual
+    # Processa a resposta
+    resposta_json = response.json()
+    codProd = resposta_json.get("codigo_produto")
+    if not codProd:
+        print(f"[ERROR] codProd não encontrado para o produto com código {codItem}.")
+        return None
 
-        # Verifica se há mais páginas
-        pagina_atual += 1
-        if pagina_atual > resposta_json.get("total_de_paginas", 1):
-            break
-
-    print(f"[INFO] Total de produtos obtidos: {len(todos_produtos)}")
-    return todos_produtos
+    print(f"[INFO] Produto consultado: {resposta_json}")
+    return codProd
 

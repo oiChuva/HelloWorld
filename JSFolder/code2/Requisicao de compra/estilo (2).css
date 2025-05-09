@@ -1,0 +1,264 @@
+html {
+  overflow: auto; /* Permite rolar */
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para Internet Explorer 10+ */
+  font-family: 'Roboto', sans-serif;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari e Edge */
+}
+
+body {
+    background: #272727;
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Coloca os elementos em uma coluna */
+    height: 125vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+    color: white;
+    background: url('fundo-n.png') no-repeat center center fixed;
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+}
+.texti {
+  height: 1%;
+  padding: 12px;
+  font-size: 3vh;
+  text-align: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.separador {
+    height: 25vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 4vh;
+}
+
+section {
+    flex: 1; /* Faz a seção principal ocupar o espaço restante */
+    display: flex; /* Ativa o flexbox */
+     /* Centraliza horizontalmente */
+
+    color: white;
+    /* background: rgba(255, 255, 255, 0.25); */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 106vh;
+    margin: auto;
+}
+.use {
+  display: flex; /* Define layout flexível */
+  flex-direction: column;
+  white-space: nowrap; /* Evita quebra de linha */
+  gap: 10px; /* Espaço entre os itens */
+  justify-content: center;
+}
+.form {
+  --width-of-input: 60vh;
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #ffffff;
+  --input-hovered-color: #e9e9e91f;
+  position: relative;
+  width: var(--width-of-input);
+ }
+
+ .input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre input e saldo */
+  width: 270%;
+}
+
+#saldoDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #002d62;
+  color: white;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 5px;
+  text-align: center;
+}
+#quantNum {
+  width: 52vh;
+}
+#Solicitante {
+  width: 52vh;
+}
+ /* styling of Input */
+ .input {
+  color: #ffffff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 106vh;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+ }
+ /* styling of animated border */
+ .input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+ }
+ /* Hover on Input */
+ input:hover {
+  background: var(--input-hovered-color);
+ }
+ .input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder branco com opacidade */
+  }
+ 
+ input:focus {
+  outline: none;
+ }
+ /* here is code of animated border */
+ input:focus ~ .input-border {
+  width: 100%;
+ }
+#itemSearch {
+  width: 95vh;
+}
+#Data {
+  width: 20vh; /* Ajuste conforme necessário */
+  display: block;
+  margin-left: 45vh;
+  margin-right: 80vh;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.use {
+  display: flex; /* Ativar flexbox */
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaço entre os itens */
+  flex-wrap: nowrap; /* Impede quebra de linha */
+}
+
+.divdadivinput {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre input e botão */
+  width: 100%;
+}
+
+.res {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100px;
+}
+
+.loader {
+  display: block;
+  margin-left: 48.5vh;
+  margin-right: 50vh;
+  display: flex; 
+  height: 9px;
+  width: 60px;
+  --c:no-repeat linear-gradient(#ffffff 0 0);
+  background: var(--c), var(--c), var(--c), var(--c);
+  background-size: 26% 3px;
+  animation: l2 1s infinite;
+}
+@keyframes l2 {
+  0%,
+  70%,
+  100% {background-position: calc(0*100%/3) 100%,calc(1*100%/3) 100%,calc(2*100%/3) 100%,calc(3*100%/3) 100%}
+  14%  {background-position: calc(0*100%/3) 0   ,calc(1*100%/3) 100%,calc(2*100%/3) 100%,calc(3*100%/3) 100%}
+  28%  {background-position: calc(0*100%/3) 100%,calc(1*100%/3) 0   ,calc(2*100%/3) 100%,calc(3*100%/3) 100%}
+  42%  {background-position: calc(0*100%/3) 100%,calc(1*100%/3) 100%,calc(2*100%/3) 0   ,calc(3*100%/3) 100%}
+  56%  {background-position: calc(0*100%/3) 100%,calc(1*100%/3) 100%,calc(2*100%/3) 100%,calc(3*100%/3) 0   }
+}
+.btn {
+    line-height: 38px;
+    height: 38px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+.btn-three {
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 8px;
+  }
+.btn-three:hover {
+      color: white; /* Cor branca ao passar o mouse */
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.452);
+    transition: all 0.3s;
+    border-radius: 8px;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.822);
+    transform: scale(1.2,1.2);
+    border-radius: 8px;
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+.rodape {
+  background-color: #002d62; /* Cor do fundo */
+  color: #ffffff; /* Cor do texto */
+  font-family: 'Roboto', sans-serif;
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  justify-content: space-between; /* Espaçamento entre os itens */
+  align-items: center; /* Alinhamento vertical */
+  width: 100%; /* Garante que ocupe toda a largura */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+.rodape div {
+  text-align: center; /* Centraliza o conteúdo dentro de cada div */
+  margin: 5px; /* Espaçamento entre os elementos */
+  padding: 1vh;
+}

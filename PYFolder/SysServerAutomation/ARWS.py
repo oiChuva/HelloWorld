@@ -21,8 +21,7 @@ from arq_NF_Functions import requisicao_consulta_nf
 from arq_NF_Functions import requisicao_consultar_empresa
 from arq_NF_Functions import requisicao_consulta_endereco_dest
 from arq_req_fuctions import requisicao_inclusao_compra
-from arq_req_fuctions import listar_todos_produtos
-from arq_req_fuctions import listar_todos_projetos
+from arq_req_fuctions import consultar_produto
 
 def calcular_data_sugestao(dias_uteis):
     """
@@ -302,52 +301,61 @@ async def webhook_end_NF(request: Request):
 async def requisicao_inclusao_compra_endpoint(request: Request):
     """
     Endpoint para incluir uma compra na API Omie.
-    O codItem recebido será pesquisado na função listar_todos_produtos.
+    O codItem recebido será pesquisado na função consultar_produto.
     """
     try:
         # Recebe os dados da requisição
+        print("[INFO] Recebendo dados da requisição...")
         data = await request.json()
+        print(f"[INFO] Dados recebidos: {data}")
+
         codItem = data.get("codItem")
         qtde = data.get("qtde")
+        obsReqCompra = data.get("obsReqCompra")
 
         if not codItem or not qtde:
+            print("[ERROR] Campos obrigatórios ausentes: codItem ou qtde.")
             raise HTTPException(status_code=400, detail="codItem e qtde são obrigatórios.")
 
-        # Lista todos os produtos para verificar se o codItem existe
-        produtos = listar_todos_produtos()
-        produto_encontrado = next((produto for produto in produtos if produto.get("codigo") == codItem), None)
-
-        if not produto_encontrado:
-            raise HTTPException(status_code=404, detail=f"Produto com codItem '{codItem}' não encontrado.")
-
-        # Extrai informações do produto encontrado
-        codProd = produto_encontrado.get("codigo_produto")
+        # Chama a função consultar_produto para obter o codProd
+        print(f"[INFO] Consultando produto com codItem: {codItem}")
+        codProd = consultar_produto(codItem)
         if not codProd:
-            raise HTTPException(status_code=400, detail="Código do produto (codProd) não encontrado no item.")
+            print(f"[ERROR] Produto com codItem '{codItem}' não encontrado.")
+            raise HTTPException(status_code=404, detail="Produto não encontrado.")
+        print(f"[INFO] Produto encontrado. codProd: {codProd}")
 
         # Calcula a data de sugestão (5 dias úteis a partir de hoje)
+        print("[INFO] Calculando data de sugestão...")
         dtSugestao = calcular_data_sugestao(5)
+        print(f"[INFO] Data de sugestão calculada: {dtSugestao}")
 
         # Gera o código interno da requisição
+        print("[INFO] Gerando código interno da requisição...")
         codIntReqCompra = gerar_codIntReqCompra()
+        print(f"[INFO] Código interno gerado: {codIntReqCompra}")
 
         # Chama a função para incluir a requisição de compra
+        print("[INFO] Incluindo requisição de compra...")
         response = requisicao_inclusao_compra(
             codIntReqCompra=codIntReqCompra,
             codProj=7396740205,  # Exemplo de código do projeto
             dtSugestao=dtSugestao,  # Data de sugestão calculada
-            obsIntReqCompra="Incluído via API",  # Exemplo de observação
+            obsIntReqCompra=obsReqCompra,  # Exemplo de observação
             codItem=codItem,
             codProd=codProd,
             qtde=qtde
         )
+        print("[INFO] Requisição de compra incluída com sucesso.")
 
         return JSONResponse(content={"message": "Requisição incluída com sucesso", "codIntReqCompra": codIntReqCompra}, status_code=200)
 
     except HTTPException as http_exc:
         # Tratar exceções específicas do FastAPI
+        print(f"[ERROR] HTTPException: {http_exc.detail}")
         raise http_exc
 
     except Exception as e:
         # Tratar erros gerais
+        print(f"[ERROR] Erro inesperado: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
