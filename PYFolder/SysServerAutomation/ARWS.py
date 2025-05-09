@@ -2,10 +2,11 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from queue import Queue
 from threading import Thread
-from datetime import datetime
+from datetime import datetime, timedelta
 from fastapi.responses import HTMLResponse
 from starlette.middleware.cors import CORSMiddleware
 import logging
+import random
 
 # Importação das funções existentes
 from arq_consultar_equipamento import consultar_equipamento
@@ -19,12 +20,40 @@ from arq_lerEstoque import lerEstoque
 from arq_NF_Functions import requisicao_consulta_nf
 from arq_NF_Functions import requisicao_consultar_empresa
 from arq_NF_Functions import requisicao_consulta_endereco_dest
+from arq_req_fuctions import requisicao_inclusao_compra
+from arq_req_fuctions import listar_todos_produtos
+from arq_req_fuctions import listar_todos_projetos
+
+def calcular_data_sugestao(dias_uteis):
+    """
+    Calcula a data de sugestão adicionando um número de dias úteis à data atual.
+    Pula sábados e domingos.
+    """
+    data_atual = datetime.now()
+    dias_adicionados = 0
+
+    while dias_adicionados < dias_uteis:
+        data_atual += timedelta(days=1)
+        # Incrementa apenas se não for sábado (5) ou domingo (6)
+        if data_atual.weekday() < 5:
+            dias_adicionados += 1
+
+    return data_atual.strftime("%d/%m/%Y")
+
+def gerar_codIntReqCompra():
+    """
+    Gera um código aleatório no padrão API00000X00.
+    """
+    parte_numerica = f"{random.randint(0, 99999):05}"  # Gera um número de 5 dígitos com zero à esquerda
+    parte_letra = chr(random.randint(65, 90))  # Gera uma letra maiúscula aleatória (A-Z)
+    parte_final = f"{random.randint(0, 99):02}"  # Gera um número de 2 dígitos com zero à esquerda
+    return f"API{parte_numerica}{parte_letra}{parte_final}"
 
 # External SysServerAutomation/arq_NF_Functions.py
 app_key = "1826443506888"
 app_secret = "c9e60167e96e156e2655a92fdcd77df7"
 
-app = FastAPI(title="Minha API FastAPI", version="1.0.0")
+app = FastAPI(title="ODE PROXY API", version="1.0.0")
 queue = Queue()
 
 # Configuração de CORS
@@ -268,6 +297,57 @@ async def webhook_end_NF(request: Request):
     except Exception as e:
         # Tratar erros gerais
         raise HTTPException(status_code=500, detail=str(e))
+    
+@app.post("/RequisicaoInclusaoCompra")
+async def requisicao_inclusao_compra_endpoint(request: Request):
+    """
+    Endpoint para incluir uma compra na API Omie.
+    O codItem recebido será pesquisado na função listar_todos_produtos.
+    """
+    try:
+        # Recebe os dados da requisição
+        data = await request.json()
+        codItem = data.get("codItem")
+        qtde = data.get("qtde")
 
+        if not codItem or not qtde:
+            raise HTTPException(status_code=400, detail="codItem e qtde são obrigatórios.")
 
-# Comando para rodar o servidor: `uvicorn ARWS:app --host 0.0.0.0 --port 5000 --log-level info --reload --log-config log_config.yaml --ssl-keyfile=.cert\key.pem --ssl-certfile=.cert\cert.pem`
+        # Lista todos os produtos para verificar se o codItem existe
+        produtos = listar_todos_produtos()
+        produto_encontrado = next((produto for produto in produtos if produto.get("codigo") == codItem), None)
+
+        if not produto_encontrado:
+            raise HTTPException(status_code=404, detail=f"Produto com codItem '{codItem}' não encontrado.")
+
+        # Extrai informações do produto encontrado
+        codProd = produto_encontrado.get("codigo_produto")
+        if not codProd:
+            raise HTTPException(status_code=400, detail="Código do produto (codProd) não encontrado no item.")
+
+        # Calcula a data de sugestão (5 dias úteis a partir de hoje)
+        dtSugestao = calcular_data_sugestao(5)
+
+        # Gera o código interno da requisição
+        codIntReqCompra = gerar_codIntReqCompra()
+
+        # Chama a função para incluir a requisição de compra
+        response = requisicao_inclusao_compra(
+            codIntReqCompra=codIntReqCompra,
+            codProj=7396740205,  # Exemplo de código do projeto
+            dtSugestao=dtSugestao,  # Data de sugestão calculada
+            obsIntReqCompra="Incluído via API",  # Exemplo de observação
+            codItem=codItem,
+            codProd=codProd,
+            qtde=qtde
+        )
+
+        return JSONResponse(content={"message": "Requisição incluída com sucesso", "codIntReqCompra": codIntReqCompra}, status_code=200)
+
+    except HTTPException as http_exc:
+        # Tratar exceções específicas do FastAPI
+        raise http_exc
+
+    except Exception as e:
+        # Tratar erros gerais
+        raise HTTPException(status_code=500, detail=str(e))
