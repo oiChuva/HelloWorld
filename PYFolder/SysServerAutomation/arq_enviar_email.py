@@ -25,8 +25,7 @@ def enviar_email(numero_serie, codOMIE):
         # Configurar e-mail
         email.To = "cadastro@opusmedical.com.br; almoxarifado@opusmedical.com.br; marcelo@opusmedical.com.br; celio@opusmedical.com.br; comercial@opusmedical.com.br; logistica@opusmedical.com.br; suportetecnico@opusmedical.com.br"
         email.Subject = "Cadastrado"
-        email.HTMLBody = f""" <p>Itens cadastrados.</p> 
-        <p>O equipamento com número de série {numero_serie} foi cadastrado com sucesso no OMIE.</p>
+        email.HTMLBody = f"""<p>O equipamento com número de série {numero_serie} foi cadastrado com sucesso no OMIE.</p>
          <p>Código OMIE: {codOMIE}</p> 
          <p><img src="cid:{attachment_cid}"></p> """
         

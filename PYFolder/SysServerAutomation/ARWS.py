@@ -20,7 +20,7 @@ from arq_lerEstoque import lerEstoque
 from arq_NF_Functions import requisicao_consulta_nf
 from arq_NF_Functions import requisicao_consultar_empresa
 from arq_NF_Functions import requisicao_consulta_endereco_dest
-from arq_req_fuctions import requisicao_inclusao_compra
+from arq_req_fuctions import incluir_requisicao_compra
 from arq_req_fuctions import consultar_produto
 
 def calcular_data_sugestao(dias_uteis):
@@ -337,7 +337,7 @@ async def requisicao_inclusao_compra_endpoint(request: Request):
 
         # Chama a função para incluir a requisição de compra
         print("[INFO] Incluindo requisição de compra...")
-        response = requisicao_inclusao_compra(
+        response = incluir_requisicao_compra(
             codIntReqCompra=codIntReqCompra,
             codProj=7396740205,  # Exemplo de código do projeto
             dtSugestao=dtSugestao,  # Data de sugestão calculada
